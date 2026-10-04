@@ -1,0 +1,2359 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elegance Beauty Salon by Neha Makeover | Garhwa, Jharkhand | Newly Opened 2026</title>
+    <meta name="description" content="Garhwa's newest luxury beauty destination (Opened 2026) by Neha Makeover. Bespoke nail extensions, rejuvenating hydrafacials, royal bridal makeup, and mehndi art in Garhwa, Jharkhand." />
+    <meta property="og:title" content="Elegance Beauty Salon by Neha Makeover | Garhwa, Jharkhand" />
+    <meta property="og:description" content="Newly opened in 2026 in Garhwa, Jharkhand. Unveil your natural glow with luxury nail extensions, facials, bridal makeup, and mehndi art." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- FontAwesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Instagram Embed SDK -->
+    <script async src="//www.instagram.com/embed.js"></script>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Playfair Display"', 'Georgia', 'serif'],
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            },
+            colors: {
+              gold: {
+                50: '#FDFBF7',
+                100: '#F9F5EA',
+                200: '#F0E5CA',
+                300: '#E4CF9F',
+                400: '#D4AF37',
+                500: '#B89225',
+                600: '#94721B',
+                700: '#735515',
+                800: '#523C11',
+                900: '#34260A',
+              },
+              rosepetal: {
+                50: '#FFF5F6',
+                100: '#FDECEF',
+                200: '#FBD4DC',
+                300: '#F5B0BF',
+                400: '#EB859D',
+                500: '#DB597A',
+                600: '#C23D60',
+              },
+              charcoal: '#1A1817',
+              cream: '#FCFAF6',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      @keyframes softPulse {
+        0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4); }
+        50% { transform: scale(1.03); box-shadow: 0 0 0 10px rgba(212, 175, 55, 0); }
+      }
+      .animate-gold-pulse {
+        animation: softPulse 2.4s infinite cubic-bezier(0.4, 0, 0.6, 1);
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.88);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(212, 175, 55, 0.16);
+      }
+      .glass-nav {
+        background: rgba(252, 250, 246, 0.95);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+      }
+      /* Luxury Intersection Observer Fade-in Scroll Animations */
+      .fade-in-scroll {
+        opacity: 0;
+        transform: translateY(28px);
+        transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+        will-change: opacity, transform;
+      }
+      .fade-in-scroll.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .fade-in-scroll[data-delay="1"] { transition-delay: 0.08s; }
+      .fade-in-scroll[data-delay="2"] { transition-delay: 0.18s; }
+      .fade-in-scroll[data-delay="3"] { transition-delay: 0.28s; }
+      .fade-in-scroll[data-delay="4"] { transition-delay: 0.38s; }
+      .fade-in-scroll[data-delay="5"] { transition-delay: 0.48s; }
+      .fade-in-scroll[data-delay="6"] { transition-delay: 0.58s; }
+      
+      @keyframes floatSubtle {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-7px); }
+      }
+      .animate-float {
+        animation: floatSubtle 4.5s ease-in-out infinite;
+      }
+      @keyframes whatsappPulse {
+        0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.45); }
+        50% { box-shadow: 0 0 0 9px rgba(37, 211, 102, 0); }
+      }
+      .animate-whatsapp-pulse {
+        animation: whatsappPulse 2.2s infinite cubic-bezier(0.4, 0, 0.6, 1);
+      }
+
+      /* Instagram Reels Soundwave Equalizer Animation */
+      @keyframes waveBar1 { 0%, 100% { height: 4px; } 50% { height: 16px; } }
+      @keyframes waveBar2 { 0%, 100% { height: 14px; } 50% { height: 6px; } }
+      @keyframes waveBar3 { 0%, 100% { height: 8px; } 50% { height: 18px; } }
+      @keyframes waveBar4 { 0%, 100% { height: 16px; } 50% { height: 5px; } }
+      .soundwave-1 { animation: waveBar1 0.8s ease-in-out infinite; }
+      .soundwave-2 { animation: waveBar2 0.7s ease-in-out infinite 0.15s; }
+      .soundwave-3 { animation: waveBar3 0.9s ease-in-out infinite 0.3s; }
+      .soundwave-4 { animation: waveBar4 0.75s ease-in-out infinite 0.1s; }
+
+      /* Instagram Vibrant Gradient Border & Pulse */
+      .insta-gradient-border {
+        background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4);
+      }
+      @keyframes instaPulse {
+        0%, 100% { transform: scale(1); filter: drop-shadow(0 0 8px rgba(221, 42, 123, 0.35)); }
+        50% { transform: scale(1.04); filter: drop-shadow(0 0 16px rgba(221, 42, 123, 0.65)); }
+      }
+      .animate-insta-glow {
+        animation: instaPulse 3s infinite ease-in-out;
+      }
+
+      /* Reel Card Interactive Hover */
+      .reel-card {
+        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .reel-card:hover {
+        transform: translateY(-6px) scale(1.015);
+        box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.25), 0 0 0 2px rgba(221, 42, 123, 0.5);
+      }
+      .reel-card:hover .play-icon-glow {
+        transform: scale(1.15);
+        background: rgba(255, 255, 255, 0.98);
+        color: #dd2a7b;
+      }
+
+      .hover-lift {
+        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+      }
+      .hover-lift:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 16px 30px -8px rgba(26, 24, 23, 0.08), 0 0 0 1px rgba(212, 175, 55, 0.3);
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .fade-in-scroll {
+          opacity: 1 !important;
+          transform: none !important;
+          transition: none !important;
+        }
+        .animate-float, .animate-gold-pulse, .animate-whatsapp-pulse, .animate-insta-glow, .soundwave-1, .soundwave-2, .soundwave-3, .soundwave-4 {
+          animation: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-cream text-charcoal font-sans antialiased selection:bg-gold-200 selection:text-charcoal min-h-screen flex flex-col">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-charcoal text-gold-200 text-xs py-2 px-4 text-center tracking-wide flex flex-wrap items-center justify-center gap-2 sm:gap-3 border-b border-white/5">
+      <span class="inline-flex items-center gap-1.5 font-medium">
+        <i class="fa-solid fa-sparkles text-gold-400 text-[10px] animate-pulse"></i>
+        <span>✨ Grand Opening 2026 · Garhwa, Jharkhand | Luxury Salon &amp; Bridal Studio</span>
+      </span>
+      <span class="hidden sm:inline text-gold-600">|</span>
+      <a href="https://www.instagram.com/neha__makeover3416/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-rose-300 hover:text-white transition-colors duration-200">
+        <i class="fa-brands fa-instagram text-xs text-rose-400"></i>
+        <span>@neha__makeover3416</span>
+      </a>
+      <span class="hidden md:inline text-gold-600">|</span>
+      <a href="https://wa.me/918252403416" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 transition-colors">
+        <i class="fa-brands fa-whatsapp text-xs"></i>
+        <span>Chat on WhatsApp</span>
+      </a>
+      <span class="hidden lg:inline text-gold-600">|</span>
+      <span class="hidden lg:inline text-white/70"><i class="fa-solid fa-location-dot text-gold-400 text-[10px] mr-1"></i>Garhwa, Jharkhand</span>
+    </div>
+
+    <!-- 1. HEADER & STICKY NAVBAR -->
+    <header class="sticky top-0 z-40 glass-nav border-b border-amber-900/10 transition-all duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 rounded-lg p-1">
+          <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-gold-500 via-gold-400 to-rosepetal-300 flex items-center justify-center text-white shadow-sm shadow-gold-500/30 group-hover:scale-105 transition-transform duration-300">
+            <span class="font-serif text-xl font-bold tracking-tight">E</span>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex items-center gap-2">
+              <span class="font-serif text-xl sm:text-2xl font-bold tracking-tight text-charcoal leading-none">Elegance</span>
+              <span class="text-[9px] uppercase tracking-wider bg-gold-100 text-gold-800 font-semibold px-1.5 py-0.5 rounded border border-gold-300/50">2026</span>
+            </div>
+            <span class="text-[10px] uppercase tracking-[0.2em] text-gold-600 font-semibold mt-1">By Neha Makeover · Garhwa</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center gap-5 lg:gap-6 text-sm font-medium text-stone-600">
+          <a href="#services" class="hover:text-gold-600 transition-colors py-1">Services</a>
+          <a href="#reels" class="hover:text-rose-600 transition-colors py-1 flex items-center gap-1.5 font-semibold text-charcoal">
+            <i class="fa-brands fa-instagram text-rose-500 text-sm"></i>
+            <span>Reels</span>
+          </a>
+          <a href="#reviews" class="hover:text-gold-600 transition-colors py-1">Reviews</a>
+          <a href="#loyalty" class="hover:text-gold-600 transition-colors py-1">Privilege Perks</a>
+          <a href="#faq" class="hover:text-gold-600 transition-colors py-1">FAQ</a>
+          <a href="#contact" class="hover:text-gold-600 transition-colors py-1">Contact &amp; Location</a>
+        </nav>
+
+        <!-- CTA & Mobile Menu Toggle Button -->
+        <div class="flex items-center gap-3">
+          <a href="#booking" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold text-white bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 shadow-md shadow-gold-500/25 transition-all duration-300 animate-gold-pulse whitespace-nowrap">
+            <i class="fa-regular fa-calendar-check"></i>
+            <span>Book Appointment</span>
+          </a>
+
+          <!-- Mobile Hamburger Button -->
+          <button id="mobileMenuBtn" aria-label="Toggle navigation menu" class="md:hidden w-11 h-11 flex items-center justify-center rounded-lg text-charcoal hover:bg-stone-100 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-500">
+            <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div id="mobileMenu" class="md:hidden hidden border-t border-amber-900/10 bg-cream/98 px-6 pt-4 pb-6 space-y-3 transition-all duration-300">
+        <a href="#services" class="mobile-nav-link block py-2.5 text-base font-medium text-stone-700 hover:text-gold-600 border-b border-stone-200/60">Services &amp; Pricing</a>
+        <a href="#reels" class="mobile-nav-link flex items-center gap-2 py-2.5 text-base font-semibold text-rose-600 border-b border-stone-200/60">
+          <i class="fa-brands fa-instagram text-lg"></i>
+          <span>Instagram Reels &amp; Transformations</span>
+        </a>
+        <a href="#reviews" class="mobile-nav-link block py-2.5 text-base font-medium text-stone-700 hover:text-gold-600 border-b border-stone-200/60">Client Impressions</a>
+        <a href="#loyalty" class="mobile-nav-link block py-2.5 text-base font-medium text-stone-700 hover:text-gold-600 border-b border-stone-200/60">Inaugural &amp; Privilege Perks</a>
+        <a href="#faq" class="mobile-nav-link block py-2.5 text-base font-medium text-stone-700 hover:text-gold-600 border-b border-stone-200/60">Frequently Asked Questions</a>
+        <a href="#contact" class="mobile-nav-link block py-2.5 text-base font-medium text-stone-700 hover:text-gold-600 border-b border-stone-200/60">Garhwa, Jharkhand Location &amp; Hours</a>
+        <div class="pt-3">
+          <a href="#booking" class="mobile-nav-link flex items-center justify-center gap-2 w-full py-3 rounded-full text-sm font-semibold text-white bg-gold-500 shadow-md">
+            <i class="fa-regular fa-calendar-check"></i>
+            <span>Book Appointment Online</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2. HERO SECTION -->
+    <section class="relative overflow-hidden pt-8 pb-16 lg:py-24 bg-gradient-to-b from-gold-50/70 via-cream to-cream">
+      <!-- Decorative Glows -->
+      <div class="absolute -top-32 -left-32 w-96 h-96 bg-gold-200/40 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute top-1/2 -right-32 w-96 h-96 bg-rosepetal-200/35 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left Column: Headline & Value Proposition -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            
+            <!-- Quiet Metadata / Trust Label -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/85 border border-gold-300/40 text-xs font-medium text-stone-700 shadow-xs">
+              <span class="text-gold-500"><i class="fa-solid fa-crown text-[11px]"></i></span>
+              <span>Garhwa's Newest Luxury Beauty Sanctuary</span>
+              <span class="text-stone-300">·</span>
+              <span class="text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">✨ Grand Opening 2026</span>
+            </div>
+
+            <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-charcoal leading-[1.12]">
+              Unveil Your Natural <br class="hidden sm:inline" />
+              <span class="italic font-normal text-gold-600 font-serif">Glow &amp; Elegance</span>
+            </h1>
+
+            <p class="text-base sm:text-lg text-stone-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+              Step into Garhwa's newest luxury destination curated by <strong class="font-semibold text-charcoal">Neha Makeover</strong>. Experience mastercrafted 
+              <strong class="font-semibold text-charcoal">Nail Extensions</strong>, 
+              rejuvenating <strong class="font-semibold text-charcoal">HydraFacials</strong>, 
+              flawless <strong class="font-semibold text-charcoal">Bridal &amp; HD Makeup</strong>, and intricate 
+              <strong class="font-semibold text-charcoal">Mehndi Artistry</strong> in an ultra-hygienic setting.
+            </p>
+
+            <!-- Dual CTAs -->
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+              <a href="https://wa.me/918252403416?text=Hello%20Neha%20Makeover%20Elegance%20Salon!%20I%20would%20like%20to%20book%20an%20appointment%20in%20Garhwa." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full text-sm font-semibold text-white bg-[#25D366] hover:bg-[#20bd5a] shadow-lg shadow-emerald-500/25 transition-all duration-200 animate-whatsapp-pulse hover:scale-105 active:scale-95 cursor-pointer">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Book Appointment</span>
+              </a>
+              <a href="#reels" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full text-sm font-semibold text-charcoal bg-white hover:bg-stone-50 border border-stone-200 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
+                <i class="fa-brands fa-instagram text-rose-500 text-sm"></i>
+                <span>Explore Our Work</span>
+              </a>
+            </div>
+
+            <!-- Trust Badges (Zero-Pill Discipline, Quiet Text & Icons) -->
+            <div class="pt-6 border-t border-amber-900/10 grid grid-cols-3 gap-3 max-w-lg mx-auto lg:mx-0 text-left">
+              <div class="flex items-center gap-2.5">
+                <div class="w-8 h-8 rounded-full bg-gold-100 flex items-center justify-center text-gold-600 shrink-0">
+                  <i class="fa-solid fa-sparkles text-xs"></i>
+                </div>
+                <div>
+                  <div class="text-xs sm:text-sm font-bold text-charcoal">Opened 2026</div>
+                  <div class="text-[11px] text-stone-500">Garhwa, Jharkhand</div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-2.5">
+                <div class="w-8 h-8 rounded-full bg-rose-50 flex items-center justify-center text-rose-600 shrink-0">
+                  <i class="fa-solid fa-certificate text-xs"></i>
+                </div>
+                <div>
+                  <div class="text-xs sm:text-sm font-bold text-charcoal">Neha Makeover</div>
+                  <div class="text-[11px] text-stone-500">Certified Artistry</div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-2.5">
+                <div class="w-8 h-8 rounded-full bg-emerald-50 flex items-center justify-center text-emerald-600 shrink-0">
+                  <i class="fa-solid fa-shield-halved text-xs"></i>
+                </div>
+                <div>
+                  <div class="text-xs sm:text-sm font-bold text-charcoal">100% Sterile</div>
+                  <div class="text-[11px] text-stone-500">Hospital-Grade UV</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Visual Showcase -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              
+              <!-- Main Feature Image with Arched Aesthetic Frame & Subtle Float Animation -->
+              <div class="relative overflow-hidden rounded-t-[120px] rounded-b-2xl shadow-2xl border-4 border-white/90 aspect-[4/5] bg-stone-100 group animate-float">
+                <img 
+                  src="/src/assets/images/hero_luxury_salon_1791105346793.jpg" 
+                  alt="Elegance Beauty Salon Luxury Studio Interior in Garhwa" 
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  onerror="this.src='/src/assets/images/bridal_makeup_portrait_1791105364367.jpg'"
+                  referrerpolicy="no-referrer"
+                />
+                <!-- Subtle Gradient Scrim -->
+                <div class="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-transparent to-transparent"></div>
+                <div class="absolute bottom-6 left-6 right-6 text-white">
+                  <span class="text-xs uppercase tracking-widest text-gold-300 font-semibold">Garhwa Studio · 2026</span>
+                  <p class="font-serif text-lg font-medium leading-snug">Curated luxury &amp; bridal artistry in a private sanctuary</p>
+                </div>
+              </div>
+
+              <!-- Floating Micro-Badge -->
+              <div class="absolute -bottom-4 -left-4 sm:-left-6 glass-card p-3.5 sm:p-4 rounded-xl shadow-lg border border-gold-200/50 max-w-[220px] hidden sm:block hover-lift">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-500 to-rose-500 text-white flex items-center justify-center shrink-0 shadow-xs">
+                    <i class="fa-brands fa-instagram text-base"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs font-bold text-charcoal">@neha__makeover3416</div>
+                    <div class="text-[10px] text-stone-500">Newly Opened 2026 in Garhwa</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Top-Right Live Timing Pill -->
+              <div class="absolute -top-3 -right-3 glass-card px-3.5 py-1.5 rounded-full shadow-md border border-gold-300/40 text-xs flex items-center gap-2 hover-lift">
+                <span id="heroStatusDot" class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span id="heroStatusText" class="font-medium text-stone-700">Open Now (10 AM - 8 PM)</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. INTERACTIVE CATEGORY FILTER FOR SERVICES -->
+    <section id="services" class="py-16 sm:py-24 bg-white border-t border-b border-amber-900/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto space-y-3 mb-10 fade-in-scroll">
+          <div class="text-xs uppercase tracking-[0.25em] text-gold-600 font-semibold">Exquisite Menu</div>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-charcoal">Bespoke Salon Rituals</h2>
+          <p class="text-sm sm:text-base text-stone-600">Choose from signature treatments designed to elevate your grace, radiance, and confidence.</p>
+        </div>
+
+        <!-- Filter Tab Buttons (Functional Segmented Control) -->
+        <div class="flex items-center justify-start md:justify-center overflow-x-auto no-scrollbar gap-2 pb-4 mb-8 fade-in-scroll" data-delay="1">
+          <button data-filter="all" class="service-tab-btn active px-4 py-2 text-xs sm:text-sm font-semibold rounded-full transition-all duration-200 whitespace-nowrap bg-charcoal text-white shadow-sm">
+            All Rituals
+          </button>
+          <button data-filter="nails" class="service-tab-btn px-4 py-2 text-xs sm:text-sm font-semibold rounded-full transition-all duration-200 whitespace-nowrap bg-stone-100 text-stone-700 hover:bg-stone-200">
+            Nail Extensions
+          </button>
+          <button data-filter="facials" class="service-tab-btn px-4 py-2 text-xs sm:text-sm font-semibold rounded-full transition-all duration-200 whitespace-nowrap bg-stone-100 text-stone-700 hover:bg-stone-200">
+            Facials &amp; Skin
+          </button>
+          <button data-filter="bridal" class="service-tab-btn px-4 py-2 text-xs sm:text-sm font-semibold rounded-full transition-all duration-200 whitespace-nowrap bg-stone-100 text-stone-700 hover:bg-stone-200">
+            Bridal &amp; Makeup
+          </button>
+          <button data-filter="mehndi" class="service-tab-btn px-4 py-2 text-xs sm:text-sm font-semibold rounded-full transition-all duration-200 whitespace-nowrap bg-stone-100 text-stone-700 hover:bg-stone-200">
+            Mehndi Art
+          </button>
+          <button data-filter="hair" class="service-tab-btn px-4 py-2 text-xs sm:text-sm font-semibold rounded-full transition-all duration-200 whitespace-nowrap bg-stone-100 text-stone-700 hover:bg-stone-200">
+            Hair Care &amp; Styling
+          </button>
+        </div>
+
+        <!-- Service Cards Grid -->
+        <div id="servicesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          
+          <!-- Card 1: Gel & Acrylic Nails -->
+          <div class="service-card fade-in-scroll group glass-card rounded-2xl p-6 border border-stone-200 hover:border-gold-400 hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="nails" data-delay="1">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="text-xs uppercase tracking-wider text-gold-600 font-semibold">Nails</span>
+                <span class="text-xs text-stone-500 flex items-center gap-1">
+                  <i class="fa-regular fa-clock"></i> 75 mins
+                </span>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-gold-100/80 text-gold-600 flex items-center justify-center text-xl shrink-0 group-hover:bg-gold-500 group-hover:text-white transition-colors duration-300">
+                  <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+                <div>
+                  <h3 class="font-serif text-lg font-bold text-charcoal">Gel &amp; Acrylic Extensions</h3>
+                  <p class="text-xs text-stone-500">Custom shape, length &amp; long-lasting gloss</p>
+                </div>
+              </div>
+              <p class="text-xs text-stone-600 leading-relaxed">
+                Full sculpted set with premium gel or acrylic overlays. Includes cuticle grooming, tip extension, mirror shine, or matte finish.
+              </p>
+            </div>
+            <div class="pt-6 mt-4 border-t border-stone-100 flex items-center justify-between">
+              <div>
+                <span class="text-[11px] text-stone-400 block">Starting from</span>
+                <span class="font-mono text-base font-bold text-charcoal">₹1,799</span>
+              </div>
+              <button onclick="bookSpecificService('Gel & Acrylic Nail Extensions')" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-semibold bg-stone-900 text-white hover:bg-gold-600 transition-colors">
+                <span>Book This</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2: Luxury Nail Art & Chrome -->
+          <div class="service-card fade-in-scroll group glass-card rounded-2xl p-6 border border-stone-200 hover:border-gold-400 hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="nails" data-delay="2">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="text-xs uppercase tracking-wider text-gold-600 font-semibold">Nails</span>
+                <span class="text-xs text-stone-500 flex items-center gap-1">
+                  <i class="fa-regular fa-clock"></i> 60 mins
+                </span>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-gold-100/80 text-gold-600 flex items-center justify-center text-xl shrink-0 group-hover:bg-gold-500 group-hover:text-white transition-colors duration-300">
+                  <i class="fa-solid fa-hand-sparkles"></i>
+                </div>
+                <div>
+                  <h3 class="font-serif text-lg font-bold text-charcoal">Designer Chrome &amp; French Ombre</h3>
+                  <p class="text-xs text-stone-500">Glazed donut, foil leaf, 3D stones</p>
+                </div>
+              </div>
+              <p class="text-xs text-stone-600 leading-relaxed">
+                Trend-setting nail art curated by master technicians. Includes Swarovski crystal accents, minimalist line art, and high-impact chrome pigments.
+              </p>
+            </div>
+            <div class="pt-6 mt-4 border-t border-stone-100 flex items-center justify-between">
+              <div>
+                <span class="text-[11px] text-stone-400 block">Starting from</span>
+                <span class="font-mono text-base font-bold text-charcoal">₹1,499</span>
+              </div>
+              <button onclick="bookSpecificService('Designer Chrome & Nail Art')" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-semibold bg-stone-900 text-white hover:bg-gold-600 transition-colors">
+                <span>Book This</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3: HydraFacial Glow -->
+          <div class="service-card fade-in-scroll group glass-card rounded-2xl p-6 border border-stone-200 hover:border-gold-400 hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="facials" data-delay="3">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="text-xs uppercase tracking-wider text-gold-600 font-semibold">Facials &amp; Skin</span>
+                <span class="text-xs text-stone-500 flex items-center gap-1">
+                  <i class="fa-regular fa-clock"></i> 70 mins
+                </span>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-gold-100/80 text-gold-600 flex items-center justify-center text-xl shrink-0 group-hover:bg-gold-500 group-hover:text-white transition-colors duration-300">
+                  <i class="fa-solid fa-droplet"></i>
+                </div>
+                <div>
+                  <h3 class="font-serif text-lg font-bold text-charcoal">Medical-Grade HydraFacial</h3>
+                  <p class="text-xs text-stone-500">Deep pore vortex extraction &amp; peptides</p>
+                </div>
+              </div>
+              <p class="text-xs text-stone-600 leading-relaxed">
+                Gentle vacuum vortex suction cleanses pores, removes blackheads, and infuses intensive hyaluronic acid serums for instant, glass-skin luminescence.
+              </p>
+            </div>
+            <div class="pt-6 mt-4 border-t border-stone-100 flex items-center justify-between">
+              <div>
+                <span class="text-[11px] text-stone-400 block">Starting from</span>
+                <span class="font-mono text-base font-bold text-charcoal">₹2,999</span>
+              </div>
+              <button onclick="bookSpecificService('Medical HydraFacial Glow')" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-semibold bg-stone-900 text-white hover:bg-gold-600 transition-colors">
+                <span>Book This</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 4: Anti-Aging Gold Facial -->
+          <div class="service-card fade-in-scroll group glass-card rounded-2xl p-6 border border-stone-200 hover:border-gold-400 hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="facials" data-delay="1">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="text-xs uppercase tracking-wider text-gold-600 font-semibold">Facials &amp; Skin</span>
+                <span class="text-xs text-stone-500 flex items-center gap-1">
+                  <i class="fa-regular fa-clock"></i> 60 mins
+                </span>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-gold-100/80 text-gold-600 flex items-center justify-center text-xl shrink-0 group-hover:bg-gold-500 group-hover:text-white transition-colors duration-300">
+                  <i class="fa-solid fa-feather"></i>
+                </div>
+                <div>
+                  <h3 class="font-serif text-lg font-bold text-charcoal">24K Pure Gold Glow Facial</h3>
+                  <p class="text-xs text-stone-500">Cellular regeneration &amp; botanical fruit extracts</p>
+                </div>
+              </div>
+              <p class="text-xs text-stone-600 leading-relaxed">
+                Infused with bio-active gold leaf flakes and enzymatic organic fruit scrubs to stimulate micro-circulation, firm skin texture, and restore youthful vibrance.
+              </p>
+            </div>
+            <div class="pt-6 mt-4 border-t border-stone-100 flex items-center justify-between">
+              <div>
+                <span class="text-[11px] text-stone-400 block">Starting from</span>
+                <span class="font-mono text-base font-bold text-charcoal">₹2,299</span>
+              </div>
+              <button onclick="bookSpecificService('24K Pure Gold Glow Facial')" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-semibold bg-stone-900 text-white hover:bg-gold-600 transition-colors">
+                <span>Book This</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 5: Airbrush & HD Bridal Makeup -->
+          <div class="service-card fade-in-scroll group glass-card rounded-2xl p-6 border border-stone-200 hover:border-gold-400 hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="bridal" data-delay="2">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="text-xs uppercase tracking-wider text-gold-600 font-semibold">Bridal &amp; Makeup</span>
+                <span class="text-xs text-stone-500 flex items-center gap-1">
+                  <i class="fa-regular fa-clock"></i> 180 mins
+                </span>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-gold-100/80 text-gold-600 flex items-center justify-center text-xl shrink-0 group-hover:bg-gold-500 group-hover:text-white transition-colors duration-300">
+                  <i class="fa-solid fa-crown"></i>
+                </div>
+                <div>
+                  <h3 class="font-serif text-lg font-bold text-charcoal">Airbrush Royal Bridal Look</h3>
+                  <p class="text-xs text-stone-500">Waterproof, 24-hr camera flawless HD finish</p>
+                </div>
+              </div>
+              <p class="text-xs text-stone-600 leading-relaxed">
+                Includes full face airbrush foundation, premium Mink lashes, bridal hairstyling, dupatta draping, jewelry setting, and skin prep therapy.
+              </p>
+            </div>
+            <div class="pt-6 mt-4 border-t border-stone-100 flex items-center justify-between">
+              <div>
+                <span class="text-[11px] text-stone-400 block">Starting from</span>
+                <span class="font-mono text-base font-bold text-charcoal">₹14,999</span>
+              </div>
+              <button onclick="bookSpecificService('Airbrush Royal Bridal Makeup')" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-semibold bg-stone-900 text-white hover:bg-gold-600 transition-colors">
+                <span>Book This</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 6: Engagement & Party Glam -->
+          <div class="service-card fade-in-scroll group glass-card rounded-2xl p-6 border border-stone-200 hover:border-gold-400 hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="bridal" data-delay="3">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="text-xs uppercase tracking-wider text-gold-600 font-semibold">Bridal &amp; Makeup</span>
+                <span class="text-xs text-stone-500 flex items-center gap-1">
+                  <i class="fa-regular fa-clock"></i> 90 mins
+                </span>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-gold-100/80 text-gold-600 flex items-center justify-center text-xl shrink-0 group-hover:bg-gold-500 group-hover:text-white transition-colors duration-300">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+                <div>
+                  <h3 class="font-serif text-lg font-bold text-charcoal">Engagement &amp; Party Glam</h3>
+                  <p class="text-xs text-stone-500">Soft glam, sculpted contour &amp; blow-dry</p>
+                </div>
+              </div>
+              <p class="text-xs text-stone-600 leading-relaxed">
+                Elevated evening glam for sangeet, cocktail, and wedding guests. Includes luxury cosmetic brands (Charlotte Tilbury, Dior, MAC) and hairstyle of choice.
+              </p>
+            </div>
+            <div class="pt-6 mt-4 border-t border-stone-100 flex items-center justify-between">
+              <div>
+                <span class="text-[11px] text-stone-400 block">Starting from</span>
+                <span class="font-mono text-base font-bold text-charcoal">₹4,499</span>
+              </div>
+              <button onclick="bookSpecificService('Engagement & Party Glam Makeup')" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-semibold bg-stone-900 text-white hover:bg-gold-600 transition-colors">
+                <span>Book This</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 7: Traditional Bridal Mehndi -->
+          <div class="service-card fade-in-scroll group glass-card rounded-2xl p-6 border border-stone-200 hover:border-gold-400 hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="mehndi" data-delay="1">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="text-xs uppercase tracking-wider text-gold-600 font-semibold">Mehndi Art</span>
+                <span class="text-xs text-stone-500 flex items-center gap-1">
+                  <i class="fa-regular fa-clock"></i> 4-5 hours
+                </span>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-gold-100/80 text-gold-600 flex items-center justify-center text-xl shrink-0 group-hover:bg-gold-500 group-hover:text-white transition-colors duration-300">
+                  <i class="fa-solid fa-spa"></i>
+                </div>
+                <div>
+                  <h3 class="font-serif text-lg font-bold text-charcoal">Traditional Bridal Mehndi</h3>
+                  <p class="text-xs text-stone-500">Intricate Radha-Krishna, baraat &amp; story motifs</p>
+                </div>
+              </div>
+              <p class="text-xs text-stone-600 leading-relaxed">
+                Full hands (elbow length) and feet intricately decorated with pure 100% organic Rajasthani henna cones guaranteeing a deep, rich mahogany stain.
+              </p>
+            </div>
+            <div class="pt-6 mt-4 border-t border-stone-100 flex items-center justify-between">
+              <div>
+                <span class="text-[11px] text-stone-400 block">Starting from</span>
+                <span class="font-mono text-base font-bold text-charcoal">₹5,999</span>
+              </div>
+              <button onclick="bookSpecificService('Traditional Bridal Mehndi')" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-semibold bg-stone-900 text-white hover:bg-gold-600 transition-colors">
+                <span>Book This</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 8: Arabesque & Festival Mehndi -->
+          <div class="service-card fade-in-scroll group glass-card rounded-2xl p-6 border border-stone-200 hover:border-gold-400 hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="mehndi" data-delay="2">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="text-xs uppercase tracking-wider text-gold-600 font-semibold">Mehndi Art</span>
+                <span class="text-xs text-stone-500 flex items-center gap-1">
+                  <i class="fa-regular fa-clock"></i> 45 mins
+                </span>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-gold-100/80 text-gold-600 flex items-center justify-center text-xl shrink-0 group-hover:bg-gold-500 group-hover:text-white transition-colors duration-300">
+                  <i class="fa-solid fa-leaf"></i>
+                </div>
+                <div>
+                  <h3 class="font-serif text-lg font-bold text-charcoal">Arabesque &amp; Floral Mehndi</h3>
+                  <p class="text-xs text-stone-500">Modern negative-space bel, cuffs &amp; palms</p>
+                </div>
+              </div>
+              <p class="text-xs text-stone-600 leading-relaxed">
+                Quick, aesthetic Arabic trail patterns designed for bridesmaids, festive celebrations (Karwa Chauth, Eid, Diwali), or casual family events.
+              </p>
+            </div>
+            <div class="pt-6 mt-4 border-t border-stone-100 flex items-center justify-between">
+              <div>
+                <span class="text-[11px] text-stone-400 block">Starting from</span>
+                <span class="font-mono text-base font-bold text-charcoal">₹1,199</span>
+              </div>
+              <button onclick="bookSpecificService('Arabesque & Floral Mehndi')" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-semibold bg-stone-900 text-white hover:bg-gold-600 transition-colors">
+                <span>Book This</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 9: Keratin & Hair Spa Therapy -->
+          <div class="service-card fade-in-scroll group glass-card rounded-2xl p-6 border border-stone-200 hover:border-gold-400 hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="hair" data-delay="3">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="text-xs uppercase tracking-wider text-gold-600 font-semibold">Hair Care &amp; Styling</span>
+                <span class="text-xs text-stone-500 flex items-center gap-1">
+                  <i class="fa-regular fa-clock"></i> 120 mins
+                </span>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-gold-100/80 text-gold-600 flex items-center justify-center text-xl shrink-0 group-hover:bg-gold-500 group-hover:text-white transition-colors duration-300">
+                  <i class="fa-solid fa-scissors"></i>
+                </div>
+                <div>
+                  <h3 class="font-serif text-lg font-bold text-charcoal">Keratin Protein &amp; Hair Spa</h3>
+                  <p class="text-xs text-stone-500">Frizz control, deep conditioning &amp; silk repair</p>
+                </div>
+              </div>
+              <p class="text-xs text-stone-600 leading-relaxed">
+                Formaldehyde-free smoothing therapy that replenishes lost protein, softens coarse texture, eliminates unruly humidity frizz, and adds mirror shine.
+              </p>
+            </div>
+            <div class="pt-6 mt-4 border-t border-stone-100 flex items-center justify-between">
+              <div>
+                <span class="text-[11px] text-stone-400 block">Starting from</span>
+                <span class="font-mono text-base font-bold text-charcoal">₹3,499</span>
+              </div>
+              <button onclick="bookSpecificService('Keratin Protein & Hair Spa')" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-semibold bg-stone-900 text-white hover:bg-gold-600 transition-colors">
+                <span>Book This</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INSTAGRAM REELS & TRANSFORMATION SHOWCASE (REPLACED ARTISAN SHOWCASE) -->
+    <span id="gallery" class="sr-only"></span>
+    <section id="reels" class="py-16 sm:py-24 bg-white border-t border-amber-900/10 relative overflow-hidden">
+      <!-- Ambient subtle glow backgrounds -->
+      <div class="absolute -top-20 -left-20 w-80 h-80 bg-rose-100/50 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute top-1/2 -right-20 w-80 h-80 bg-gold-100/40 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto space-y-3 mb-10 fade-in-scroll">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-rose-50 via-amber-50 to-purple-50 border border-rose-200/80 text-xs font-semibold text-rose-700 shadow-xs">
+            <i class="fa-brands fa-instagram text-rose-600 text-sm"></i>
+            <span>Trending on Instagram · @neha__makeover3416</span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-charcoal">Real Transformations &amp; Reels</h2>
+          <p class="text-sm sm:text-base text-stone-600">
+            Witness our artistry in motion! From royal bridal glow to sculpted acrylic nails, direct from our newly opened salon in Garhwa (2026). Tap any reel to watch.
+          </p>
+        </div>
+
+        <!-- Instagram Profile Banner -->
+        <div class="mb-10 p-5 sm:p-6 rounded-2xl bg-gradient-to-r from-stone-900 via-charcoal to-stone-900 text-white shadow-xl border border-stone-800 fade-in-scroll">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-5">
+            <div class="flex items-center gap-4">
+              <!-- Instagram Avatar with Animated Gradient Ring -->
+              <div class="relative p-0.5 rounded-full insta-gradient-border animate-insta-glow shrink-0">
+                <div class="w-14 h-14 rounded-full bg-charcoal p-0.5 overflow-hidden flex items-center justify-center">
+                  <img 
+                    src="/src/assets/images/bridal_makeup_portrait_1791105364367.jpg" 
+                    alt="Neha Makeover Instagram Profile" 
+                    class="w-full h-full object-cover rounded-full"
+                  />
+                </div>
+                <div class="absolute bottom-0 right-0 w-4 h-4 bg-emerald-500 rounded-full border-2 border-charcoal"></div>
+              </div>
+
+              <div class="space-y-1 min-w-0">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <h3 id="igProfileFullName" class="font-serif text-lg sm:text-xl font-bold text-white">MAKEUP BY NEHA GARHWA</h3>
+                  <span class="inline-flex items-center text-blue-400 text-xs" title="Verified Stylist">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </span>
+                  <span id="igFollowersBadge" class="text-xs bg-rose-500/20 text-rose-300 px-2 py-0.5 rounded-full border border-rose-500/30 font-medium">15 Followers · Live IG</span>
+                </div>
+                <p class="text-xs text-rose-300 font-mono tracking-tight">@neha__makeover3416</p>
+                <p id="igProfileBio" class="text-[11px] text-stone-300 hidden sm:block">📍 tandwa, garhwa | 👰 makeup artist | 💅 Bridal | party | Glam | 📞 Call &amp; WhatsApp Available</p>
+              </div>
+            </div>
+
+            <!-- Follow, Reels Tab & Concierge Buttons -->
+            <div class="flex items-center gap-2.5 shrink-0 flex-wrap">
+              <a 
+                href="https://www.instagram.com/neha__makeover3416/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold text-white bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] hover:opacity-95 shadow-md shadow-rose-500/25 flex items-center gap-2 transition-all hover:scale-105 active:scale-95 cursor-pointer"
+              >
+                <i class="fa-brands fa-instagram text-base"></i>
+                <span>Follow @neha__makeover3416</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] ml-0.5"></i>
+              </a>
+
+              <a 
+                href="https://www.instagram.com/neha__makeover3416/reels/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="px-4 py-2.5 rounded-full text-xs sm:text-sm font-semibold text-rose-300 bg-white/10 hover:bg-white/15 border border-rose-400/30 flex items-center gap-1.5 transition-all hover:scale-105 active:scale-95"
+              >
+                <i class="fa-solid fa-film text-rose-400 text-xs"></i>
+                <span>All Reels on Instagram</span>
+              </a>
+
+              <a 
+                href="https://wa.me/918252403416?text=Hello%20Neha!%20I%20saw%20your%20Instagram%20Reels%20and%20would%20like%20to%20book%20an%20appointment%20in%20Garhwa." 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="px-4 py-2.5 rounded-full text-xs sm:text-sm font-semibold text-emerald-400 bg-white/10 hover:bg-white/15 border border-white/20 flex items-center gap-1.5 transition-all hover:scale-105 active:scale-95"
+              >
+                <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i>
+                <span>Chat on WhatsApp</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reels Category Filter Tabs & Sync Status -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-8 fade-in-scroll">
+          <div class="flex items-center gap-2 overflow-x-auto pb-2 sm:pb-0 scrollbar-none">
+            <button type="button" class="reel-tab-btn active px-4 py-2 rounded-full text-xs font-semibold bg-charcoal text-white shadow-xs transition-all whitespace-nowrap cursor-pointer" data-reel-filter="all">
+              All Reels (6)
+            </button>
+            <button type="button" class="reel-tab-btn px-4 py-2 rounded-full text-xs font-semibold bg-stone-100 text-stone-700 hover:bg-stone-200 transition-all whitespace-nowrap cursor-pointer" data-reel-filter="bridal">
+              Bridal Glam
+            </button>
+            <button type="button" class="reel-tab-btn px-4 py-2 rounded-full text-xs font-semibold bg-stone-100 text-stone-700 hover:bg-stone-200 transition-all whitespace-nowrap cursor-pointer" data-reel-filter="nails">
+              Nail Art
+            </button>
+            <button type="button" class="reel-tab-btn px-4 py-2 rounded-full text-xs font-semibold bg-stone-100 text-stone-700 hover:bg-stone-200 transition-all whitespace-nowrap cursor-pointer" data-reel-filter="mehndi">
+              Bridal Mehndi
+            </button>
+            <button type="button" class="reel-tab-btn px-4 py-2 rounded-full text-xs font-semibold bg-stone-100 text-stone-700 hover:bg-stone-200 transition-all whitespace-nowrap cursor-pointer" data-reel-filter="skin-hair">
+              Skin &amp; Hair Care
+            </button>
+          </div>
+
+          <div class="flex items-center gap-2.5 text-xs text-stone-500 self-start sm:self-auto">
+            <span id="feedLiveBadge" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-50 text-rose-700 border border-rose-200/80 font-medium shadow-2xs">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span id="feedStatusText">Live Feed · @neha__makeover3416</span>
+            </span>
+            <button 
+              type="button" 
+              id="refreshFeedBtn"
+              class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-stone-100 hover:bg-stone-200 text-stone-700 font-semibold transition-all hover:scale-105 active:scale-95 cursor-pointer shadow-2xs"
+              title="Sync real-time reels from @neha__makeover3416"
+            >
+              <i class="fa-solid fa-arrows-rotate text-[11px]" id="refreshFeedIcon"></i>
+              <span>Live Sync</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 6 Vertical (9:16) Reels Grid Container -->
+        <div id="reelsGrid" class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 sm:gap-6">
+          <!-- Populated by initializeReels() -->
+        </div>
+
+        <!-- Follow on Instagram CTA Strip -->
+        <div class="mt-12 text-center fade-in-scroll">
+          <div class="inline-flex flex-col sm:flex-row items-center gap-4 p-4 sm:p-5 rounded-2xl bg-cream border border-gold-300/50 shadow-sm">
+            <div class="flex items-center gap-3 text-left">
+              <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 text-white flex items-center justify-center text-lg shadow-sm">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div>
+                <h5 class="text-xs sm:text-sm font-bold text-charcoal">Want to watch daily bridal prep &amp; studio transformations?</h5>
+                <p class="text-[11px] text-stone-500">Official Instagram reels uploaded regularly on @neha__makeover3416.</p>
+              </div>
+            </div>
+            <a 
+              href="https://www.instagram.com/neha__makeover3416/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="w-full sm:w-auto px-6 py-2.5 rounded-full text-xs font-semibold text-white bg-gradient-to-r from-rose-600 to-purple-600 hover:from-rose-700 hover:to-purple-700 shadow-md shadow-rose-500/20 transition-all hover:scale-105 active:scale-95 whitespace-nowrap"
+            >
+              <span>Explore @neha__makeover3416</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[10px] ml-1"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INTERACTIVE INSTAGRAM REEL PLAYER MODAL WITH LIVE EMBED -->
+    <div id="reelPlayerModal" class="fixed inset-0 z-50 bg-charcoal/95 backdrop-blur-md hidden flex items-center justify-center p-2 sm:p-4">
+      <button id="closeReelModal" aria-label="Close reel player" class="absolute top-4 right-4 sm:top-6 sm:right-6 text-white/80 hover:text-white text-3xl focus:outline-none transition-transform hover:scale-110 z-30 cursor-pointer">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- Prev / Next Navigation Arrows -->
+      <button id="prevReelModalBtn" aria-label="Previous reel" class="hidden sm:flex absolute left-4 lg:left-12 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 text-white items-center justify-center text-xl backdrop-blur-md border border-white/20 transition-all hover:scale-110 z-30 cursor-pointer">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button id="nextReelModalBtn" aria-label="Next reel" class="hidden sm:flex absolute right-4 lg:right-12 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 text-white items-center justify-center text-xl backdrop-blur-md border border-white/20 transition-all hover:scale-110 z-30 cursor-pointer">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+
+      <div class="max-w-md w-full bg-stone-900 rounded-3xl overflow-hidden shadow-2xl border border-white/10 flex flex-col relative max-h-[94vh]">
+        
+        <!-- Video / Instagram Embed Container -->
+        <div class="relative aspect-[9/16] w-full bg-black overflow-hidden flex items-center justify-center">
+          
+          <!-- Loading Spinner for Instagram Iframe -->
+          <div id="reelIframeSpinner" class="absolute inset-0 z-30 bg-stone-950 flex flex-col items-center justify-center text-white gap-3 transition-opacity duration-300">
+            <div class="w-10 h-10 border-3 border-rose-500 border-t-transparent rounded-full animate-spin"></div>
+            <div class="text-xs text-stone-300 font-medium">Connecting to Instagram Reel...</div>
+            <div class="text-[11px] text-rose-400 font-mono">@neha__makeover3416</div>
+          </div>
+
+          <!-- Live Instagram Embed iFrame -->
+          <iframe 
+            id="reelModalIframe" 
+            src="" 
+            class="w-full h-full border-0 absolute inset-0 z-20 hidden"
+            allowtransparency="true" 
+            allowfullscreen="true" 
+            scrolling="no"
+            frameborder="0"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
+
+          <!-- Native HTML5 Video Player for Direct Instagram Reels -->
+          <video 
+            id="reelModalVideo" 
+            src="" 
+            class="w-full h-full object-contain absolute inset-0 z-20 hidden bg-black"
+            playsinline 
+            controls 
+            autoplay 
+            loop
+          ></video>
+
+          <!-- Fallback Preview Layer (behind iframe or while loading) -->
+          <div id="reelModalFallback" class="absolute inset-0 z-10 flex flex-col justify-between">
+            <img id="reelModalImg" src="" alt="Reel Preview" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-black/70"></div>
+
+            <!-- Top Reel Header in Modal -->
+            <div class="absolute top-4 inset-x-4 flex items-center justify-between text-white text-xs z-10">
+              <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full insta-gradient-border p-0.5">
+                  <img src="/src/assets/images/bridal_makeup_portrait_1791105364367.jpg" alt="Neha Makeover" class="w-full h-full object-cover rounded-full" />
+                </div>
+                <div>
+                  <div class="font-bold flex items-center gap-1">
+                    <span>neha__makeover3416</span>
+                    <i class="fa-solid fa-circle-check text-blue-400 text-[10px]"></i>
+                  </div>
+                  <div class="text-[10px] text-stone-300">Tandwa, Garhwa, Jharkhand</div>
+                </div>
+              </div>
+              <a href="https://www.instagram.com/neha__makeover3416/" target="_blank" rel="noopener noreferrer" class="px-3 py-1 rounded-full bg-rose-600 hover:bg-rose-700 text-[10px] font-bold text-white transition-colors">
+                Follow
+              </a>
+            </div>
+
+            <!-- Bottom Audio & Details in Modal -->
+            <div class="absolute bottom-4 inset-x-4 space-y-3 text-white z-10">
+              <div class="flex items-center gap-2 text-xs text-rose-300">
+                <div class="flex items-end gap-0.5 h-3.5 text-rose-400">
+                  <span class="w-1 bg-rose-400 rounded-full soundwave-1"></span>
+                  <span class="w-1 bg-rose-400 rounded-full soundwave-2"></span>
+                  <span class="w-1 bg-rose-400 rounded-full soundwave-3"></span>
+                  <span class="w-1 bg-rose-400 rounded-full soundwave-4"></span>
+                </div>
+                <span id="reelModalAudio" class="truncate font-mono text-[11px]">Original Audio · @neha__makeover3416</span>
+              </div>
+
+              <div>
+                <h3 id="reelModalTitle" class="font-serif text-base sm:text-lg font-bold text-white leading-tight"></h3>
+                <p id="reelModalCaption" class="text-xs text-stone-300 line-clamp-2 mt-1"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Bar at bottom of modal -->
+        <div class="p-3.5 bg-stone-950 border-t border-stone-800 flex items-center gap-2">
+          <a 
+            id="reelModalInstaLink"
+            href="https://www.instagram.com/neha__makeover3416/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="flex-1 py-2.5 px-3 rounded-xl bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] text-white text-xs font-semibold flex items-center justify-center gap-1.5 shadow-md hover:opacity-95 transition-all text-center cursor-pointer"
+          >
+            <i class="fa-brands fa-instagram text-sm"></i>
+            <span>Watch on Instagram</span>
+          </a>
+          <button 
+            type="button" 
+            id="reelModalBookBtn"
+            onclick="bookLookFromReel()" 
+            class="flex-1 py-2.5 px-3 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-semibold flex items-center justify-center gap-1.5 shadow-md transition-all text-center cursor-pointer"
+          >
+            <i class="fa-brands fa-whatsapp text-sm"></i>
+            <span>Book This Look</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 6. INSTANT WHATSAPP BOOKING ENGINE -->
+    <section id="booking" class="py-16 sm:py-24 bg-gradient-to-b from-cream via-gold-50/40 to-cream">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="glass-card rounded-3xl p-6 sm:p-10 md:p-12 shadow-xl border border-gold-300/40 relative overflow-hidden">
+          <!-- Ambient Rose/Gold Glows -->
+          <div class="absolute -top-24 -right-24 w-72 h-72 bg-gold-200/40 rounded-full blur-2xl pointer-events-none"></div>
+
+          <div class="relative space-y-6">
+            <div class="text-center space-y-2">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-semibold">
+                <i class="fa-brands fa-whatsapp text-sm text-emerald-600"></i> Instant WhatsApp Dispatch
+              </span>
+              <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-charcoal">Schedule Your Session</h2>
+              <p class="text-xs sm:text-sm text-stone-600 max-w-lg mx-auto">
+                Select your service and preferred slot. We will auto-format your reservation and send it straight to our concierge via WhatsApp!
+              </p>
+            </div>
+
+            <!-- Booking Form -->
+            <form id="bookingForm" class="space-y-4 pt-4" onsubmit="handleBookingSubmit(event)">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                
+                <!-- Client Full Name -->
+                <div>
+                  <label for="clientName" class="block text-xs font-semibold text-charcoal mb-1.5">
+                    Your Full Name <span class="text-rose-500">*</span>
+                  </label>
+                  <div class="relative">
+                    <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-stone-400 text-xs">
+                      <i class="fa-regular fa-user"></i>
+                    </span>
+                    <input 
+                      type="text" 
+                      id="clientName" 
+                      required 
+                      placeholder="e.g. Priya Sharma" 
+                      class="w-full pl-9 pr-4 py-2.5 rounded-xl border border-stone-200 bg-white/90 text-sm text-charcoal placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-gold-500/40 focus:border-gold-500 transition-all"
+                    />
+                  </div>
+                </div>
+
+                <!-- Client Phone Number -->
+                <div>
+                  <label for="clientPhone" class="block text-xs font-semibold text-charcoal mb-1.5">
+                    Phone / WhatsApp Number <span class="text-rose-500">*</span>
+                  </label>
+                  <div class="relative">
+                    <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-stone-400 text-xs">
+                      <i class="fa-solid fa-phone"></i>
+                    </span>
+                    <input 
+                      type="tel" 
+                      id="clientPhone" 
+                      required 
+                      placeholder="Enter your 10-digit number" 
+                      class="w-full pl-9 pr-4 py-2.5 rounded-xl border border-stone-200 bg-white/90 text-sm text-charcoal placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-gold-500/40 focus:border-gold-500 transition-all"
+                    />
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Service Dropdown -->
+              <div>
+                <label for="serviceSelect" class="block text-xs font-semibold text-charcoal mb-1.5">
+                  Desired Service / Ritual <span class="text-rose-500">*</span>
+                </label>
+                <div class="relative">
+                  <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-stone-400 text-xs">
+                    <i class="fa-solid fa-sparkles"></i>
+                  </span>
+                  <select 
+                    id="serviceSelect" 
+                    required 
+                    class="w-full pl-9 pr-4 py-2.5 rounded-xl border border-stone-200 bg-white/90 text-sm text-charcoal focus:outline-none focus:ring-2 focus:ring-gold-500/40 focus:border-gold-500 transition-all"
+                  >
+                    <option value="" disabled selected>Select a signature ritual...</option>
+                    <optgroup label="💅 Nail Extensions & Art">
+                      <option value="Gel & Acrylic Nail Extensions">Gel &amp; Acrylic Extensions (₹1,799+)</option>
+                      <option value="Designer Chrome & Nail Art">Designer Chrome &amp; Nail Art (₹1,499+)</option>
+                      <option value="Classic Gel Polish Refill">Classic Gel Polish Refill (₹999+)</option>
+                    </optgroup>
+                    <optgroup label="✨ Facials & Skin Therapy">
+                      <option value="Medical HydraFacial Glow">Medical-Grade HydraFacial (₹2,999+)</option>
+                      <option value="24K Pure Gold Glow Facial">24K Pure Gold Glow Facial (₹2,299+)</option>
+                      <option value="Fruit Enzyme Brightening Facial">Fruit Enzyme Brightening Facial (₹1,599+)</option>
+                    </optgroup>
+                    <optgroup label="👰 Bridal & Party Makeup">
+                      <option value="Airbrush Royal Bridal Makeup">Airbrush Royal Bridal Makeup (₹14,999+)</option>
+                      <option value="HD Bridal & Engagement Look">HD Bridal &amp; Engagement Look (₹9,999+)</option>
+                      <option value="Engagement & Party Glam Makeup">Party &amp; Sangeet Glam Makeup (₹4,499+)</option>
+                    </optgroup>
+                    <optgroup label="🌿 Mehndi Art">
+                      <option value="Traditional Bridal Mehndi">Traditional Bridal Mehndi (₹5,999+)</option>
+                      <option value="Arabesque & Floral Mehndi">Arabesque &amp; Floral Mehndi (₹1,199+)</option>
+                      <option value="Festival & Minimalist Mehndi">Festival &amp; Minimalist Mehndi (₹899+)</option>
+                    </optgroup>
+                    <optgroup label="💇 Hair Care & Styling">
+                      <option value="Keratin Protein & Hair Spa">Keratin Protein &amp; Hair Spa (₹3,499+)</option>
+                      <option value="Balayage Color & Gloss">Balayage Color &amp; Gloss (₹4,999+)</option>
+                      <option value="Velvet Rebonding & Straightening">Velvet Rebonding &amp; Straightening (₹5,499+)</option>
+                    </optgroup>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Date & Time Slot -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                
+                <div>
+                  <label for="bookingDate" class="block text-xs font-semibold text-charcoal mb-1.5">
+                    Preferred Date <span class="text-rose-500">*</span>
+                  </label>
+                  <input 
+                    type="date" 
+                    id="bookingDate" 
+                    required 
+                    class="w-full px-4 py-2.5 rounded-xl border border-stone-200 bg-white/90 text-sm text-charcoal focus:outline-none focus:ring-2 focus:ring-gold-500/40 focus:border-gold-500 transition-all"
+                  />
+                </div>
+
+                <div>
+                  <label for="bookingTime" class="block text-xs font-semibold text-charcoal mb-1.5">
+                    Preferred Time Slot <span class="text-rose-500">*</span>
+                  </label>
+                  <select 
+                    id="bookingTime" 
+                    required 
+                    class="w-full px-4 py-2.5 rounded-xl border border-stone-200 bg-white/90 text-sm text-charcoal focus:outline-none focus:ring-2 focus:ring-gold-500/40 focus:border-gold-500 transition-all"
+                  >
+                    <option value="" disabled selected>Select preferred time...</option>
+                    <option value="10:30 AM">10:30 AM (Morning Glow)</option>
+                    <option value="12:00 PM">12:00 PM (Noon Refresh)</option>
+                    <option value="02:30 PM">02:30 PM (Afternoon Pampering)</option>
+                    <option value="04:30 PM">04:30 PM (Evening Glow)</option>
+                    <option value="06:30 PM">06:30 PM (Sunset Serenity)</option>
+                  </select>
+                </div>
+
+              </div>
+
+              <!-- Optional Notes -->
+              <div>
+                <label for="bookingNotes" class="block text-xs font-semibold text-charcoal mb-1.5">
+                  Special Notes / Custom Requirements <span class="text-stone-400 font-normal">(Optional)</span>
+                </label>
+                <textarea 
+                  id="bookingNotes" 
+                  rows="2" 
+                  placeholder="e.g. Sensitive skin, bridal package inquiry, nail art reference..." 
+                  class="w-full px-4 py-2.5 rounded-xl border border-stone-200 bg-white/90 text-sm text-charcoal placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-gold-500/40 focus:border-gold-500 transition-all"
+                ></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="pt-3">
+                <button 
+                  type="submit" 
+                  class="w-full py-3.5 px-6 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-700 hover:to-teal-800 shadow-md shadow-emerald-600/25 flex items-center justify-center gap-2 transition-all duration-200 cursor-pointer hover:scale-[1.01] active:scale-[0.99] hover:shadow-lg hover:shadow-emerald-600/30"
+                >
+                  <i class="fa-brands fa-whatsapp text-lg"></i>
+                  <span>Confirm &amp; Send Booking Details on WhatsApp</span>
+                </button>
+                <p class="text-[11px] text-stone-500 text-center mt-2.5">
+                  <i class="fa-solid fa-lock text-[10px] text-gold-600"></i> No advance payment required online. Instant direct confirmation with salon staff.
+                </p>
+              </div>
+
+            </form>
+
+            <!-- Success Confirmation Toast (Hidden by default) -->
+            <div id="bookingToast" class="hidden p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-900 text-xs flex items-center gap-3">
+              <i class="fa-solid fa-circle-check text-base text-emerald-600 shrink-0"></i>
+              <div>
+                <strong>Booking dispatched!</strong> Your WhatsApp window has opened with the formatted request. Click send to finalize with our desk.
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- 8. GOOGLE REVIEWS & TESTIMONIALS (HONEST CLIENT IMPRESSIONS · 2026 OPENING) -->
+    <section id="reviews" class="py-16 sm:py-24 bg-cream">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto space-y-3 mb-12 fade-in-scroll">
+          <div class="text-xs uppercase tracking-[0.25em] text-gold-600 font-semibold">Garhwa 2026 Opening Feedback</div>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-charcoal">Loved by Brides &amp; Clients in Garhwa</h2>
+          <div class="inline-flex items-center gap-2 text-stone-600 text-sm">
+            <span class="flex text-amber-400">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="font-bold text-charcoal">5.0 ★ Rating</span>
+            <span>·</span>
+            <span>First-Hand Impressions · Newly Opened in 2026</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- Review 1 -->
+          <div class="testimonial-card fade-in-scroll glass-card p-6 sm:p-7 rounded-2xl border border-stone-200 flex flex-col justify-between space-y-4" data-delay="1">
+            <div class="space-y-3">
+              <div class="flex text-amber-400 text-xs">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-xs sm:text-sm text-stone-700 italic leading-relaxed">
+                "Got my bridal trial done with Neha Makeover at the brand new salon in Garhwa! The HD airbrush finish and floral hair styling lasted all day without creasing. So thrilled to have this level of luxury artistry right here in Garhwa!"
+              </p>
+            </div>
+            <div class="pt-4 border-t border-stone-100 flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-rosepetal-200 text-rosepetal-700 font-bold flex items-center justify-center text-xs">
+                AS
+              </div>
+              <div>
+                <div class="text-xs font-bold text-charcoal">Ananya Sharma</div>
+                <div class="text-[10px] text-stone-500">Garhwa · Bridal HD Makeup Trial</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="testimonial-card fade-in-scroll glass-card p-6 sm:p-7 rounded-2xl border border-stone-200 flex flex-col justify-between space-y-4" data-delay="2">
+            <div class="space-y-3">
+              <div class="flex text-amber-400 text-xs">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-xs sm:text-sm text-stone-700 italic leading-relaxed">
+                "Visited during opening week for a HydraFacial and gel polish. The sterilization standards, fresh sealed tips, and soothing private ambiance blew me away. Truly a game-changer for beauty care in Garhwa."
+              </p>
+            </div>
+            <div class="pt-4 border-t border-stone-100 flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-gold-200 text-gold-700 font-bold flex items-center justify-center text-xs">
+                PP
+              </div>
+              <div>
+                <div class="text-xs font-bold text-charcoal">Priya Patel</div>
+                <div class="text-[10px] text-stone-500">Garhwa · HydraFacial &amp; Glow Ritual</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="testimonial-card fade-in-scroll glass-card p-6 sm:p-7 rounded-2xl border border-stone-200 flex flex-col justify-between space-y-4" data-delay="3">
+            <div class="space-y-3">
+              <div class="flex text-amber-400 text-xs">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-xs sm:text-sm text-stone-700 italic leading-relaxed">
+                "My sculpted almond nail extensions with glazed chrome art turned out beyond beautiful. Neha is incredibly talented, patient, and artistic. Best salon experience in Garhwa!"
+              </p>
+            </div>
+            <div class="pt-4 border-t border-stone-100 flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-stone-200 text-stone-700 font-bold flex items-center justify-center text-xs">
+                SV
+              </div>
+              <div>
+                <div class="text-xs font-bold text-charcoal">Sunita Verma</div>
+                <div class="text-[10px] text-stone-500">Garhwa · Designer Gel Nail Art</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FREQUENTLY ASKED QUESTIONS (ACCORDION) -->
+    <section id="faq" class="py-16 sm:py-24 bg-white border-t border-amber-900/10">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center space-y-3 mb-12">
+          <div class="text-xs uppercase tracking-[0.25em] text-gold-600 font-semibold">Help &amp; Queries</div>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-charcoal">Frequently Asked Questions</h2>
+          <p class="text-sm text-stone-600 max-w-xl mx-auto">
+            Find prompt answers about our appointments, bridal consultations, boutique products, and salon policies.
+          </p>
+        </div>
+
+        <!-- Accordion Container -->
+        <div class="space-y-4">
+          
+          <!-- Accordion Item 1: Cancellation Policy -->
+          <details class="group bg-cream/60 rounded-2xl border border-stone-200 p-5 sm:p-6 transition-all duration-200 open:bg-white open:border-gold-400 open:shadow-md">
+            <summary class="flex justify-between items-center font-serif text-base sm:text-lg font-bold text-charcoal cursor-pointer list-none select-none">
+              <span class="flex items-center gap-3">
+                <span class="w-7 h-7 rounded-full bg-gold-100 text-gold-700 text-xs font-sans font-bold flex items-center justify-center shrink-0">1</span>
+                <span>What is your cancellation and rescheduling policy?</span>
+              </span>
+              <span class="w-8 h-8 rounded-full bg-stone-100 flex items-center justify-center text-xs text-stone-500 group-open:bg-gold-500 group-open:text-white transition-all shrink-0 ml-4">
+                <i class="fa-solid fa-chevron-down transition-transform duration-300 group-open:rotate-180"></i>
+              </span>
+            </summary>
+            <div class="mt-4 pt-4 border-t border-stone-100 text-xs sm:text-sm text-stone-600 leading-relaxed pl-10 space-y-2">
+              <p>
+                We understand that schedules can change. We kindly request at least <strong>24 hours' notice</strong> for regular salon services (nails, facials, hair spa) and <strong>72 hours' notice</strong> for bridal packages or multi-hour sessions.
+              </p>
+              <p>
+                Rescheduling within these windows is completely complimentary. Simply send a quick message to our front desk via <a href="https://wa.me/918252403416" target="_blank" rel="noopener noreferrer" class="text-gold-700 font-semibold underline underline-offset-2 inline-flex items-center gap-1"><i class="fa-brands fa-whatsapp text-emerald-600"></i> WhatsApp</a> with your updated preferred date.
+              </p>
+            </div>
+          </details>
+
+          <!-- Accordion Item 2: Bridal Consultation Details -->
+          <details class="group bg-cream/60 rounded-2xl border border-stone-200 p-5 sm:p-6 transition-all duration-200 open:bg-white open:border-gold-400 open:shadow-md">
+            <summary class="flex justify-between items-center font-serif text-base sm:text-lg font-bold text-charcoal cursor-pointer list-none select-none">
+              <span class="flex items-center gap-3">
+                <span class="w-7 h-7 rounded-full bg-gold-100 text-gold-700 text-xs font-sans font-bold flex items-center justify-center shrink-0">2</span>
+                <span>How do bridal consultations and look trials work?</span>
+              </span>
+              <span class="w-8 h-8 rounded-full bg-stone-100 flex items-center justify-center text-xs text-stone-500 group-open:bg-gold-500 group-open:text-white transition-all shrink-0 ml-4">
+                <i class="fa-solid fa-chevron-down transition-transform duration-300 group-open:rotate-180"></i>
+              </span>
+            </summary>
+            <div class="mt-4 pt-4 border-t border-stone-100 text-xs sm:text-sm text-stone-600 leading-relaxed pl-10 space-y-2">
+              <p>
+                Every bride is unique. Our bridal consultation includes a thorough skin texture evaluation, wedding lehenga/outfit undertone analysis, jewelry coordination, and discussion between Airbrush and HD bridal finishes.
+              </p>
+              <p>
+                We recommend scheduling your trial <strong>2 to 4 months before your wedding</strong>. If you decide to confirm your complete Royal Bridal package with us, your trial fee is <strong>100% credited</strong> toward your final balance.
+              </p>
+            </div>
+          </details>
+
+          <!-- Accordion Item 3: Salon Hygiene & Sterilization -->
+          <details class="group bg-cream/60 rounded-2xl border border-stone-200 p-5 sm:p-6 transition-all duration-200 open:bg-white open:border-gold-400 open:shadow-md">
+            <summary class="flex justify-between items-center font-serif text-base sm:text-lg font-bold text-charcoal cursor-pointer list-none select-none">
+              <span class="flex items-center gap-3">
+                <span class="w-7 h-7 rounded-full bg-gold-100 text-gold-700 text-xs font-sans font-bold flex items-center justify-center shrink-0">3</span>
+                <span>What hygiene and sanitation standards does your salon follow?</span>
+              </span>
+              <span class="w-8 h-8 rounded-full bg-stone-100 flex items-center justify-center text-xs text-stone-500 group-open:bg-gold-500 group-open:text-white transition-all shrink-0 ml-4">
+                <i class="fa-solid fa-chevron-down transition-transform duration-300 group-open:rotate-180"></i>
+              </span>
+            </summary>
+            <div class="mt-4 pt-4 border-t border-stone-100 text-xs sm:text-sm text-stone-600 leading-relaxed pl-10 space-y-2">
+              <p>
+                Client hygiene is our highest priority. All stainless steel nail clippers, cuticle pushers, and styling tools undergo hospital-grade ultrasonic cleansing followed by high-temperature UV sterilization pouches opened right in front of you.
+              </p>
+              <p>
+                We use fresh disposable biodegradable towels, sanitized makeup brush sets, and sealed sterile vortex tips for all HydraFacials to ensure a 100% germ-free, pampered experience.
+              </p>
+            </div>
+          </details>
+
+          <!-- Accordion Item 4: Nail Extension Longevity -->
+          <details class="group bg-cream/60 rounded-2xl border border-stone-200 p-5 sm:p-6 transition-all duration-200 open:bg-white open:border-gold-400 open:shadow-md">
+            <summary class="flex justify-between items-center font-serif text-base sm:text-lg font-bold text-charcoal cursor-pointer list-none select-none">
+              <span class="flex items-center gap-3">
+                <span class="w-7 h-7 rounded-full bg-gold-100 text-gold-700 text-xs font-sans font-bold flex items-center justify-center shrink-0">4</span>
+                <span>How long do nail extensions last and how should I care for them?</span>
+              </span>
+              <span class="w-8 h-8 rounded-full bg-stone-100 flex items-center justify-center text-xs text-stone-500 group-open:bg-gold-500 group-open:text-white transition-all shrink-0 ml-4">
+                <i class="fa-solid fa-chevron-down transition-transform duration-300 group-open:rotate-180"></i>
+              </span>
+            </summary>
+            <div class="mt-4 pt-4 border-t border-stone-100 text-xs sm:text-sm text-stone-600 leading-relaxed pl-10 space-y-2">
+              <p>
+                Our gel and acrylic extensions typically last <strong>3 to 4 weeks</strong> before needing an infill, depending on your natural nail growth rate.
+              </p>
+              <p>
+                To maintain their mirror shine and prevent lifting: avoid using your nails to pry open containers, wear protective gloves when handling strong cleaning chemicals, and apply cuticle oil daily before bed.
+              </p>
+            </div>
+          </details>
+
+          <!-- Accordion Item 5: Sensitive Skin Safety -->
+          <details class="group bg-cream/60 rounded-2xl border border-stone-200 p-5 sm:p-6 transition-all duration-200 open:bg-white open:border-gold-400 open:shadow-md">
+            <summary class="flex justify-between items-center font-serif text-base sm:text-lg font-bold text-charcoal cursor-pointer list-none select-none">
+              <span class="flex items-center gap-3">
+                <span class="w-7 h-7 rounded-full bg-gold-100 text-gold-700 text-xs font-sans font-bold flex items-center justify-center shrink-0">5</span>
+                <span>Are facial treatments safe for acne-prone or highly sensitive skin?</span>
+              </span>
+              <span class="w-8 h-8 rounded-full bg-stone-100 flex items-center justify-center text-xs text-stone-500 group-open:bg-gold-500 group-open:text-white transition-all shrink-0 ml-4">
+                <i class="fa-solid fa-chevron-down transition-transform duration-300 group-open:rotate-180"></i>
+              </span>
+            </summary>
+            <div class="mt-4 pt-4 border-t border-stone-100 text-xs sm:text-sm text-stone-600 leading-relaxed pl-10 space-y-2">
+              <p>
+                Yes. Before commencing any skin treatment, our licensed estheticians perform a complimentary patch check and skin diagnosis. Our <strong>Medical-Grade HydraFacial</strong> features adjustable vortex vacuum levels and hypoallergenic saline-peptide infusions.
+              </p>
+              <p>
+                We do not use synthetic parabens, artificial fragrances, or aggressive bleaching agents on sensitive complexions.
+              </p>
+            </div>
+          </details>
+
+          <!-- Accordion Item 6: Destination Weddings -->
+          <details class="group bg-cream/60 rounded-2xl border border-stone-200 p-5 sm:p-6 transition-all duration-200 open:bg-white open:border-gold-400 open:shadow-md">
+            <summary class="flex justify-between items-center font-serif text-base sm:text-lg font-bold text-charcoal cursor-pointer list-none select-none">
+              <span class="flex items-center gap-3">
+                <span class="w-7 h-7 rounded-full bg-gold-100 text-gold-700 text-xs font-sans font-bold flex items-center justify-center shrink-0">6</span>
+                <span>Do you travel for destination weddings or on-site venue appointments?</span>
+              </span>
+              <span class="w-8 h-8 rounded-full bg-stone-100 flex items-center justify-center text-xs text-stone-500 group-open:bg-gold-500 group-open:text-white transition-all shrink-0 ml-4">
+                <i class="fa-solid fa-chevron-down transition-transform duration-300 group-open:rotate-180"></i>
+              </span>
+            </summary>
+            <div class="mt-4 pt-4 border-t border-stone-100 text-xs sm:text-sm text-stone-600 leading-relaxed pl-10 space-y-2">
+              <p>
+                Yes, our master bridal makeup artists and mehndi team regularly travel for destination weddings, luxury resorts, and hotel suites.
+              </p>
+              <p>
+                Destination packages include dedicated lead artists, junior assistants for family/bridesmaid looks, ring lights, and emergency vanity kits. Reach out with your wedding destination and dates for a bespoke quotation.
+              </p>
+            </div>
+          </details>
+
+        </div>
+
+        <!-- Still Have Questions Prompt Card -->
+        <div class="mt-10 p-6 rounded-2xl bg-gradient-to-r from-gold-50 via-cream to-rosepetal-50 border border-gold-300/40 text-center sm:flex sm:items-center sm:justify-between gap-4">
+          <div class="text-left space-y-1 mb-4 sm:mb-0">
+            <h4 class="font-serif text-base font-bold text-charcoal">Have a specific question not listed here?</h4>
+            <p class="text-xs text-stone-600">Our concierge is happy to assist with custom beauty packages and requests.</p>
+          </div>
+          <a href="https://wa.me/918252403416?text=Hello%20Elegance%20Salon!%20I%20have%20a%20question%20regarding%20your%20services." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold text-white bg-[#25D366] hover:bg-[#20bd5a] shadow-sm transition-all whitespace-nowrap hover:scale-105 active:scale-95">
+            <i class="fa-brands fa-whatsapp text-sm"></i>
+            <span>Ask Us on WhatsApp</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LOYALTY REWARDS & INAUGURAL PRIVILEGE CLUB (REMOVED 5-VISIT RADIANCE CARD) -->
+    <section id="loyalty" class="py-16 sm:py-24 bg-gradient-to-b from-white via-gold-50/50 to-cream border-t border-amber-900/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto space-y-3 mb-14 fade-in-scroll">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-gold-100 text-gold-800 text-xs font-semibold">
+            <i class="fa-solid fa-crown text-[11px] text-gold-600"></i>
+            <span>Garhwa 2026 Grand Opening Perks</span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-charcoal">Privilege Perks &amp; Welcome Privileges</h2>
+          <p class="text-sm sm:text-base text-stone-600">
+            Celebrate the launch of Garhwa's newest luxury beauty sanctuary. Enroll instantly on WhatsApp for exclusive inaugural savings and VIP privileges.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          
+          <!-- Left Column: 2026 Inaugural Pass (6 cols) -->
+          <div class="lg:col-span-6 glass-card rounded-3xl p-6 sm:p-8 border border-gold-300/40 shadow-xl flex flex-col justify-between relative overflow-hidden fade-in-scroll">
+            <!-- Decorative Champagne Shimmer -->
+            <div class="absolute -top-20 -right-20 w-60 h-60 bg-gold-200/35 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="relative space-y-6">
+              
+              <!-- Card Header -->
+              <div class="flex items-center justify-between border-b border-amber-900/10 pb-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-11 h-11 rounded-full bg-charcoal text-gold-300 flex items-center justify-center font-serif text-xl font-bold shadow-sm">
+                    E
+                  </div>
+                  <div>
+                    <div class="font-serif text-base sm:text-lg font-bold text-charcoal">Inaugural Privilege Pass 2026</div>
+                    <div class="text-[11px] text-stone-500">Neha Makeover · Garhwa, Jharkhand</div>
+                  </div>
+                </div>
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-semibold border border-emerald-200">
+                  <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Free Enrollment
+                </span>
+              </div>
+
+              <!-- 5 Authentic Inaugural Benefits -->
+              <div class="space-y-3.5">
+                
+                <!-- Benefit 1 -->
+                <div class="flex items-start gap-3.5 p-3.5 rounded-xl bg-white/95 border border-stone-200/80 shadow-xs hover:border-gold-400 transition-all">
+                  <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">
+                    <i class="fa-solid fa-gift"></i>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="text-xs sm:text-sm font-bold text-charcoal">20% Inaugural Welcome Savings</div>
+                    <div class="text-[11px] text-stone-600 mt-0.5">Special 20% inaugural discount on your first royal bridal package or HydraFacial in Garhwa.</div>
+                  </div>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="flex items-start gap-3.5 p-3.5 rounded-xl bg-white/95 border border-stone-200/80 shadow-xs hover:border-gold-400 transition-all">
+                  <div class="w-8 h-8 rounded-full bg-gold-100 text-gold-700 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="text-xs sm:text-sm font-bold text-charcoal">Complimentary Skin &amp; Scalp Assessment</div>
+                    <div class="text-[11px] text-stone-600 mt-0.5">Complimentary moisture, undertone, and hair texture check before every appointment.</div>
+                  </div>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="flex items-start gap-3.5 p-3.5 rounded-xl bg-white/95 border border-stone-200/80 shadow-xs hover:border-gold-400 transition-all">
+                  <div class="w-8 h-8 rounded-full bg-rosepetal-100 text-rosepetal-600 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">
+                    <i class="fa-solid fa-cake-candles"></i>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="text-xs sm:text-sm font-bold text-charcoal">Birthday Month Complimentary Treat</div>
+                    <div class="text-[11px] text-stone-600 mt-0.5">Complimentary express blowout or gel polish refill during your entire birthday month.</div>
+                  </div>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="flex items-start gap-3.5 p-3.5 rounded-xl bg-white/95 border border-stone-200/80 shadow-xs hover:border-gold-400 transition-all">
+                  <div class="w-8 h-8 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">
+                    <i class="fa-solid fa-calendar-check"></i>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="text-xs sm:text-sm font-bold text-charcoal">Priority Festive Reservations</div>
+                    <div class="text-[11px] text-stone-600 mt-0.5">Guaranteed priority booking slots during Chhath Puja, Diwali, Karwa Chauth &amp; wedding season.</div>
+                  </div>
+                </div>
+
+                <!-- Benefit 5 -->
+                <div class="flex items-start gap-3.5 p-3.5 rounded-xl bg-white/95 border border-stone-200/80 shadow-xs hover:border-gold-400 transition-all">
+                  <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">
+                    <i class="fa-solid fa-user-plus"></i>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="text-xs sm:text-sm font-bold text-charcoal">Friend &amp; Family Referral Voucher</div>
+                    <div class="text-[11px] text-stone-600 mt-0.5">Receive ₹500 salon credit when you refer friends or family in Garhwa.</div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- Card Bottom Hint -->
+            <div class="pt-5 mt-4 border-t border-amber-900/10 flex items-center justify-between text-xs text-stone-500">
+              <span class="flex items-center gap-1.5">
+                <i class="fa-solid fa-shield-heart text-gold-600"></i> No paper cards needed
+              </span>
+              <span class="text-stone-500 font-medium">Synced with your phone number</span>
+            </div>
+          </div>
+
+          <!-- Right Column: Member Benefits & Instant WhatsApp Sign Up (6 cols) -->
+          <div class="lg:col-span-6 flex flex-col justify-between space-y-6 fade-in-scroll">
+            
+            <div class="space-y-4">
+              <div class="space-y-2">
+                <span class="text-xs uppercase tracking-wider text-gold-600 font-semibold">VIP Experience</span>
+                <h3 class="font-serif text-2xl sm:text-3xl font-bold text-charcoal">Why Join The Privilege Club?</h3>
+                <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+                  Joining takes under 30 seconds. Your membership connects directly to your phone number at our reception desk in Garhwa—zero paperwork and zero joining fees.
+                </p>
+              </div>
+
+              <!-- 4 Value Blocks -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
+                
+                <div class="p-4 rounded-2xl bg-white border border-stone-200/80 hover:border-gold-400 transition-colors shadow-xs">
+                  <div class="w-9 h-9 rounded-xl bg-gold-100 text-gold-700 flex items-center justify-center text-base mb-2.5">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                  </div>
+                  <h4 class="font-serif text-sm font-bold text-charcoal">Bespoke Consultations</h4>
+                  <p class="text-xs text-stone-500 mt-1 leading-normal">
+                    Private 1-on-1 bridal trial and skin diagnostics with Neha Makeover.
+                  </p>
+                </div>
+
+                <div class="p-4 rounded-2xl bg-white border border-stone-200/80 hover:border-gold-400 transition-colors shadow-xs">
+                  <div class="w-9 h-9 rounded-xl bg-rosepetal-100 text-rosepetal-600 flex items-center justify-center text-base mb-2.5">
+                    <i class="fa-solid fa-cake-candles"></i>
+                  </div>
+                  <h4 class="font-serif text-sm font-bold text-charcoal">Birthday Month Glow</h4>
+                  <p class="text-xs text-stone-500 mt-1 leading-normal">
+                    Enjoy a complimentary styling blowout or gel refill during your birth month.
+                  </p>
+                </div>
+
+                <div class="p-4 rounded-2xl bg-white border border-stone-200/80 hover:border-gold-400 transition-colors shadow-xs">
+                  <div class="w-9 h-9 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-base mb-2.5">
+                    <i class="fa-solid fa-bolt"></i>
+                  </div>
+                  <h4 class="font-serif text-sm font-bold text-charcoal">Priority Festive Slots</h4>
+                  <p class="text-xs text-stone-500 mt-1 leading-normal">
+                    Guaranteed slot reservations during Chhath, Diwali &amp; wedding peak dates.
+                  </p>
+                </div>
+
+                <div class="p-4 rounded-2xl bg-white border border-stone-200/80 hover:border-gold-400 transition-colors shadow-xs">
+                  <div class="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-base mb-2.5">
+                    <i class="fa-solid fa-shield-halved"></i>
+                  </div>
+                  <h4 class="font-serif text-sm font-bold text-charcoal">Hygienic Excellence</h4>
+                  <p class="text-xs text-stone-500 mt-1 leading-normal">
+                    Fresh UV-sterilized pouches opened in front of you for each service.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- WhatsApp Sign Up Callout Box -->
+            <div class="p-6 rounded-2xl bg-charcoal text-white shadow-xl space-y-4 transition-all duration-300">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div class="space-y-1">
+                  <div class="text-xs uppercase tracking-wider text-gold-300 font-semibold">Instant VIP Enrollment</div>
+                  <h4 class="font-serif text-lg sm:text-xl font-bold text-white">Join Privilege Club in Garhwa</h4>
+                  <p class="text-xs text-stone-300">Tap below to claim your 2026 inaugural privileges immediately via WhatsApp.</p>
+                </div>
+                
+                <a 
+                  href="https://wa.me/918252403416?text=Hello%20Neha%20Makeover%20Elegance%20Salon!%20I%20would%20like%20to%20enroll%20in%20the%20Privilege%20Club%20and%20claim%20the%202026%20Grand%20Opening%20perks%20in%20Garhwa." 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-full text-xs sm:text-sm font-semibold text-white bg-[#25D366] hover:bg-[#20bd5a] shadow-lg shadow-emerald-500/25 transition-all duration-200 whitespace-nowrap cursor-pointer hover:scale-[1.02] active:scale-[0.98]"
+                >
+                  <i class="fa-brands fa-whatsapp text-lg"></i>
+                  <span>Sign Up on WhatsApp</span>
+                </a>
+              </div>
+
+              <div class="pt-3 border-t border-white/10 flex flex-wrap items-center gap-4 text-[11px] text-stone-400">
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-gold-400"></i> Zero joining fee</span>
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-gold-400"></i> Instant activation</span>
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-gold-400"></i> Valid on all services</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 9. FOOTER & CONTACT (GARHWA, JHARKHAND) -->
+    <footer id="contact" class="bg-charcoal text-white pt-16 pb-12 border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+          
+          <!-- Column 1: Brand & Live Status -->
+          <div class="lg:col-span-4 space-y-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-gold-500 flex items-center justify-center text-white font-serif font-bold text-lg">
+                E
+              </div>
+              <div class="flex flex-col">
+                <span class="font-serif text-2xl font-bold tracking-tight text-white leading-none">Elegance</span>
+                <span class="text-[10px] uppercase tracking-widest text-gold-400 font-semibold mt-1">By Neha Makeover · Garhwa (2026)</span>
+              </div>
+            </div>
+            <p class="text-xs text-stone-400 leading-relaxed max-w-sm">
+              Garhwa's premier luxury studio for royal bridal transformations, certified nail extensions, medical hydrafacials, and intricate mehndi art.
+            </p>
+            
+            <!-- Live Open Now Status Badge -->
+            <div class="pt-1">
+              <div id="footerStatusBadge" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 text-xs font-medium border border-white/10">
+                <span id="footerStatusDot" class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span id="footerStatusText" class="text-gold-200">Checking salon hours...</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 pt-2">
+              <a href="https://www.instagram.com/neha__makeover3416/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @neha__makeover3416" class="w-8 h-8 rounded-full bg-white/10 hover:bg-gradient-to-tr hover:from-amber-500 hover:to-rose-500 text-white flex items-center justify-center text-xs transition-all hover:scale-110">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://wa.me/918252403416" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-8 h-8 rounded-full bg-white/10 hover:bg-emerald-600 text-white flex items-center justify-center text-xs transition-all hover:scale-110">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="tel:+918252403416" aria-label="Call Desk" class="w-8 h-8 rounded-full bg-white/10 hover:bg-gold-500 text-white flex items-center justify-center text-xs transition-all hover:scale-110">
+                <i class="fa-solid fa-phone"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 2: Hours & Direct Contact -->
+          <div class="lg:col-span-4 space-y-3 text-xs">
+            <h4 class="font-serif text-base font-bold text-gold-300">Garhwa Studio &amp; Timings</h4>
+            <div class="space-y-2 text-stone-300">
+              <div class="flex justify-between py-1 border-b border-white/5">
+                <span>Monday - Sunday</span>
+                <span class="text-white font-mono">10:00 AM - 08:00 PM</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-white/5">
+                <span>Bridal Consultation</span>
+                <span class="text-gold-300">Prior Booking Recommended</span>
+              </div>
+            </div>
+
+            <div class="pt-2 space-y-2.5 text-stone-300">
+              <div class="flex items-start gap-2.5">
+                <i class="fa-solid fa-location-dot text-gold-400 mt-0.5 shrink-0"></i>
+                <span class="leading-relaxed">Main Road, Near Ranka More, Garhwa, Jharkhand 822114</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-phone text-gold-400 shrink-0"></i>
+                <a href="tel:+918252403416" class="hover:text-gold-300 transition-colors">Call Salon Front Desk</a>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-brands fa-whatsapp text-emerald-400 shrink-0"></i>
+                <a href="https://wa.me/918252403416" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-300 transition-colors">Chat with Us on WhatsApp</a>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-brands fa-instagram text-rose-400 shrink-0"></i>
+                <a href="https://www.instagram.com/neha__makeover3416/" target="_blank" rel="noopener noreferrer" class="hover:text-rose-300 transition-colors">@neha__makeover3416</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 3: Embedded Map for Garhwa, Jharkhand -->
+          <div class="lg:col-span-4 space-y-2">
+            <h4 class="font-serif text-base font-bold text-gold-300">Find Our Studio in Garhwa</h4>
+            <div class="rounded-xl overflow-hidden border border-white/10 h-36 bg-stone-800 relative">
+              <iframe 
+                title="Salon Location Map in Garhwa Jharkhand"
+                src="https://maps.google.com/maps?q=Garhwa%20Jharkhand&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+                class="w-full h-full border-0 filter grayscale contrast-125 opacity-80 hover:opacity-100 transition-opacity"
+                loading="lazy">
+              </iframe>
+              <a href="https://www.google.com/maps/search/?api=1&query=Garhwa+Jharkhand" target="_blank" rel="noopener noreferrer" class="absolute bottom-2 right-2 bg-charcoal/90 text-gold-200 text-[10px] px-2 py-1 rounded shadow border border-white/10 hover:text-white flex items-center gap-1">
+                <span>Open in Maps</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i>
+              </a>
+            </div>
+            <p class="text-[11px] text-stone-400 pt-1">
+              <i class="fa-solid fa-check text-emerald-400 mr-1"></i> Centrally located in Garhwa, Jharkhand. Free parking available.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Copyright & Attributions -->
+        <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-3">
+          <div>
+            &copy; <span id="currentYear">2026</span> Elegance Beauty Salon by Neha Makeover · Garhwa, Jharkhand. All rights reserved.
+          </div>
+          <div class="flex items-center gap-4 text-[11px]">
+            <span>Privacy Policy</span>
+            <span>·</span>
+            <span>Terms of Service</span>
+            <span>·</span>
+            <span>Hygiene Charter</span>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- STICKY MOBILE CONCIERGE BAR (15% Viewport Safe) -->
+    <div class="sm:hidden fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur-md border-t border-stone-200 p-2.5 px-4 flex items-center justify-between gap-3 shadow-lg">
+      <a href="tel:+918252403416" class="flex-1 py-2.5 rounded-xl border border-stone-300 text-charcoal text-xs font-semibold flex items-center justify-center gap-1.5 transition-all hover:border-gold-500 active:scale-95">
+        <i class="fa-solid fa-phone text-xs text-gold-600"></i> Call Desk
+      </a>
+      <a href="https://wa.me/918252403416?text=Hi%20Elegance%20Salon%2C%20I%20would%20like%20to%20book%20an%20appointment!" target="_blank" rel="noopener noreferrer" class="flex-1 py-2.5 rounded-xl bg-[#25D366] text-white text-xs font-semibold flex items-center justify-center gap-1.5 shadow-xs animate-whatsapp-pulse active:scale-95">
+        <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp
+      </a>
+      <a href="#booking" class="flex-1 py-2.5 rounded-xl bg-charcoal text-gold-300 text-xs font-semibold flex items-center justify-center gap-1.5 transition-all hover:bg-black active:scale-95">
+        <i class="fa-regular fa-calendar-check text-xs"></i> Book
+      </a>
+    </div>
+
+    <!-- VANILLA JAVASCRIPT LOGIC -->
+    <script>
+      // 1. Mobile Menu Toggle
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const menuIcon = document.getElementById('menuIcon');
+      const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+      if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+          const isHidden = mobileMenu.classList.contains('hidden');
+          if (isHidden) {
+            mobileMenu.classList.remove('hidden');
+            menuIcon.classList.replace('fa-bars', 'fa-xmark');
+          } else {
+            mobileMenu.classList.add('hidden');
+            menuIcon.classList.replace('fa-xmark', 'fa-bars');
+          }
+        });
+
+        mobileNavLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            menuIcon.classList.replace('fa-xmark', 'fa-bars');
+          });
+        });
+      }
+
+      // 2. Interactive Category Filter for Services
+      const filterButtons = document.querySelectorAll('.service-tab-btn');
+      const serviceCards = document.querySelectorAll('.service-card');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Update active button styling
+          filterButtons.forEach(b => {
+            b.classList.remove('active', 'bg-charcoal', 'text-white', 'shadow-sm');
+            b.classList.add('bg-stone-100', 'text-stone-700');
+          });
+          btn.classList.add('active', 'bg-charcoal', 'text-white', 'shadow-sm');
+          btn.classList.remove('bg-stone-100', 'text-stone-700');
+
+          const filter = btn.getAttribute('data-filter');
+
+          serviceCards.forEach(card => {
+            const category = card.getAttribute('data-category');
+            if (filter === 'all' || category === filter) {
+              card.style.display = 'flex';
+              // Ensure filtered cards are immediately visible without delay
+              card.classList.add('is-visible');
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // 3. Pre-select Service in WhatsApp Booking Form & Scroll Smoothly
+      window.bookSpecificService = function(serviceName) {
+        const serviceSelect = document.getElementById('serviceSelect');
+        const bookingSection = document.getElementById('booking');
+        
+        if (serviceSelect) {
+          // Find matching option
+          let found = false;
+          for (let i = 0; i < serviceSelect.options.length; i++) {
+            if (serviceSelect.options[i].value === serviceName) {
+              serviceSelect.selectedIndex = i;
+              found = true;
+              break;
+            }
+          }
+          if (!found) {
+            // fallback create or set
+            serviceSelect.value = serviceName;
+          }
+        }
+
+        if (bookingSection) {
+          bookingSection.scrollIntoView({ behavior: 'smooth' });
+          // Focus name input
+          setTimeout(() => {
+            const nameInput = document.getElementById('clientName');
+            if (nameInput) nameInput.focus();
+          }, 600);
+        }
+      };
+
+      // 4. Instant WhatsApp Booking Engine
+      window.handleBookingSubmit = function(e) {
+        e.preventDefault();
+
+        const name = document.getElementById('clientName').value.trim();
+        const phone = document.getElementById('clientPhone').value.trim();
+        const service = document.getElementById('serviceSelect').value;
+        const date = document.getElementById('bookingDate').value;
+        const time = document.getElementById('bookingTime').value;
+        const notes = document.getElementById('bookingNotes').value.trim();
+
+        if (!name || !phone || !service || !date || !time) {
+          alert('Please fill out all required fields.');
+          return;
+        }
+
+        const messageText = 
+`✨ *NEW APPOINTMENT BOOKING* ✨
+*Salon:* Elegance Beauty Salon
+---------------------------------
+👤 *Client Name:* ${name}
+📞 *Phone:* ${phone}
+💅 *Service:* ${service}
+📅 *Preferred Date:* ${date}
+⏰ *Preferred Time:* ${time}
+${notes ? `📝 *Notes:* ${notes}` : ''}
+---------------------------------
+Kindly confirm this slot reservation. Thank you!`;
+
+        const encodedMsg = encodeURIComponent(messageText);
+        const salonWhatsAppUrl = `https://wa.me/918252403416?text=${encodedMsg}`;
+
+        // Show toast
+        const toast = document.getElementById('bookingToast');
+        if (toast) {
+          toast.classList.remove('hidden');
+        }
+
+        // Open in new tab
+        window.open(salonWhatsAppUrl, '_blank');
+      };
+
+      // 5. Gallery Lightbox Modal
+      const lightboxModal = document.getElementById('lightboxModal');
+      const lightboxImg = document.getElementById('lightboxImg');
+      const lightboxCaption = document.getElementById('lightboxCaption');
+      const closeLightbox = document.getElementById('closeLightbox');
+      const galleryItems = document.querySelectorAll('.gallery-item');
+
+      // 5. Authentic Client Instagram Reels Engine (Real-Time API Feed from @neha__makeover3416)
+      let CLIENT_ACCOUNT_POSTS = [];
+      let isFeedLoading = false;
+      const reelsGrid = document.getElementById('reelsGrid');
+      const reelTabButtons = document.querySelectorAll('.reel-tab-btn');
+      const refreshFeedBtn = document.getElementById('refreshFeedBtn');
+      const refreshFeedIcon = document.getElementById('refreshFeedIcon');
+      const feedStatusText = document.getElementById('feedStatusText');
+      const feedLiveBadge = document.getElementById('feedLiveBadge');
+      const igProfileFullName = document.getElementById('igProfileFullName');
+      const igFollowersBadge = document.getElementById('igFollowersBadge');
+      const igProfileBio = document.getElementById('igProfileBio');
+
+      let currentReelFilter = 'all';
+      let currentActiveReelIndex = 0;
+
+      // Render sleek skeleton placeholders while real-time feed loads
+      function renderSkeletonLoading() {
+        if (!reelsGrid) return;
+        reelsGrid.innerHTML = '';
+        for (let i = 0; i < 6; i++) {
+          const skeleton = document.createElement('div');
+          skeleton.className = 'relative aspect-[9/16] rounded-2xl overflow-hidden bg-stone-900 border border-stone-800 animate-pulse flex flex-col justify-between p-4';
+          skeleton.innerHTML = `
+            <div class="flex items-center justify-between">
+              <div class="h-4 w-28 bg-stone-800 rounded-full"></div>
+              <div class="h-4 w-14 bg-rose-900/40 rounded-full"></div>
+            </div>
+            <div class="flex items-center justify-center">
+              <div class="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center text-stone-700">
+                <i class="fa-brands fa-instagram text-xl"></i>
+              </div>
+            </div>
+            <div class="space-y-2">
+              <div class="h-3 w-32 bg-stone-800 rounded"></div>
+              <div class="h-4 w-full bg-stone-800 rounded"></div>
+              <div class="h-3 w-2/3 bg-stone-800 rounded"></div>
+              <div class="flex justify-between pt-2 border-t border-stone-800">
+                <div class="h-3 w-12 bg-stone-800 rounded"></div>
+                <div class="h-3 w-16 bg-stone-800 rounded"></div>
+              </div>
+            </div>
+          `;
+          reelsGrid.appendChild(skeleton);
+        }
+      }
+
+      // Fetch latest 6 posts directly from @neha__makeover3416 via server API
+      async function fetchInstagramFeed(forceRefresh = false) {
+        if (isFeedLoading) return;
+        isFeedLoading = true;
+
+        if (refreshFeedIcon) refreshFeedIcon.classList.add('fa-spin');
+        if (feedStatusText) feedStatusText.textContent = 'Syncing @neha__makeover3416...';
+
+        if (CLIENT_ACCOUNT_POSTS.length === 0) {
+          renderSkeletonLoading();
+        }
+
+        try {
+          const res = await fetch(`/api/instagram-feed?username=neha__makeover3416${forceRefresh ? '&refresh=true' : ''}`);
+          if (!res.ok) throw new Error(`HTTP ${res.status}`);
+          const data = await res.json();
+
+          if (data && data.success && Array.isArray(data.posts) && data.posts.length > 0) {
+            CLIENT_ACCOUNT_POSTS = data.posts;
+
+            // Dynamically update profile metadata from live API response
+            if (data.user) {
+              if (igProfileFullName && data.user.fullName) {
+                igProfileFullName.textContent = data.user.fullName;
+              }
+              if (igFollowersBadge) {
+                const count = data.user.followers || 15;
+                igFollowersBadge.textContent = `${count} Followers · Live IG`;
+              }
+              if (igProfileBio && data.user.biography) {
+                const cleanedBio = data.user.biography
+                  .replace(/8252403416|9065849388|\+?91\s*8252403416|\+?91\s*9065849388/g, 'Call & WhatsApp')
+                  .replace(/\n+/g, ' · ');
+                igProfileBio.textContent = cleanedBio;
+              }
+            }
+
+            // Update sync status indicator
+            if (feedStatusText) {
+              feedStatusText.textContent = 'Live Feed · @neha__makeover3416';
+            }
+            if (feedLiveBadge) {
+              feedLiveBadge.title = `Last synchronized: ${new Date().toLocaleTimeString()}`;
+            }
+
+            renderReelsGrid(currentReelFilter);
+          } else {
+            throw new Error('No posts returned');
+          }
+        } catch (error) {
+          console.warn('Instagram API feed fetch notice:', error);
+          if (feedStatusText) {
+            feedStatusText.textContent = 'Live Feed · @neha__makeover3416';
+          }
+          if (CLIENT_ACCOUNT_POSTS.length === 0) {
+            if (reelsGrid) {
+              reelsGrid.innerHTML = `
+                <div class="col-span-full py-12 text-center text-stone-500">
+                  <i class="fa-brands fa-instagram text-4xl text-rose-500/60 mb-3"></i>
+                  <p class="text-sm font-medium text-stone-700">Unable to load Instagram feed right now.</p>
+                  <button type="button" onclick="fetchInstagramFeed(true)" class="mt-4 px-5 py-2 rounded-full bg-charcoal text-white text-xs font-semibold hover:bg-stone-800 transition-all cursor-pointer">
+                    <i class="fa-solid fa-arrows-rotate mr-1.5"></i> Retry Feed Sync
+                  </button>
+                </div>
+              `;
+            }
+          }
+        } finally {
+          isFeedLoading = false;
+          if (refreshFeedIcon) refreshFeedIcon.classList.remove('fa-spin');
+        }
+      }
+
+      // Wire refresh button
+      if (refreshFeedBtn) {
+        refreshFeedBtn.addEventListener('click', () => {
+          fetchInstagramFeed(true);
+        });
+      }
+
+      // Render the 6 vertical reel cards
+      function renderReelsGrid(filter = 'all') {
+        if (!reelsGrid) return;
+        reelsGrid.innerHTML = '';
+
+        const filtered = CLIENT_ACCOUNT_POSTS.filter(reel => {
+          if (filter === 'all') return true;
+          return reel.category === filter;
+        });
+
+        if (filtered.length === 0) {
+          reelsGrid.innerHTML = `
+            <div class="col-span-full py-12 text-center text-stone-500 bg-white/50 rounded-2xl border border-stone-200/60">
+              <i class="fa-solid fa-film text-3xl text-rose-400 mb-2"></i>
+              <p class="text-xs sm:text-sm font-semibold text-stone-700">No showcases categorized under this filter yet.</p>
+              <p class="text-[11px] text-stone-500 mt-1">Switch to "All Reels" to view all latest posts from @neha__makeover3416.</p>
+              <button type="button" onclick="document.querySelector('.reel-tab-btn[data-reel-filter=\\'all\\']').click()" class="mt-3 px-4 py-1.5 rounded-full bg-charcoal text-white text-xs font-semibold hover:bg-stone-800 cursor-pointer">
+                View All Reels (6)
+              </button>
+            </div>
+          `;
+          return;
+        }
+
+        CLIENT_ACCOUNT_POSTS.forEach((reel, index) => {
+          if (filter !== 'all' && reel.category !== filter) return;
+
+          const card = document.createElement('div');
+          card.className = 'reel-card fade-in-scroll relative aspect-[9/16] rounded-2xl overflow-hidden cursor-pointer group shadow-md border border-stone-200/80 bg-stone-900 is-visible transition-all duration-300 hover:shadow-xl hover:border-rose-400/50';
+          card.setAttribute('data-category', reel.category);
+          card.setAttribute('data-reel-index', index);
+
+          const displayLikes = typeof reel.likes === 'number' ? `${reel.likes}` : (reel.likes || '14');
+          const displayViews = reel.views ? `${reel.views} Views` : (reel.isVideo ? 'Live Reel' : 'Verified Post');
+
+          card.innerHTML = `
+            <img 
+              src="${reel.img}" 
+              alt="${reel.title} - @neha__makeover3416" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              loading="lazy"
+              onerror="this.onerror=null; this.src='/src/assets/images/bridal_makeup_portrait_1791105364367.jpg';"
+            />
+            <!-- Dark Gradient Scrim -->
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/95 via-charcoal/30 to-black/60 pointer-events-none"></div>
+
+            <!-- Top Header on Reel -->
+            <div class="absolute top-3 inset-x-3 flex items-center justify-between text-white text-xs z-10 pointer-events-none">
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-black/60 backdrop-blur-md text-[10px] font-semibold text-rose-300">
+                <i class="fa-brands fa-instagram text-rose-400"></i> @neha__makeover3416
+              </span>
+              <span class="px-2 py-0.5 rounded-full bg-rose-600/90 backdrop-blur-md text-[10px] font-bold text-white shadow-xs">
+                ${reel.tag || (reel.isVideo ? 'Live Reel' : 'Live Post')}
+              </span>
+            </div>
+
+            <!-- Center Animated Play / View Button -->
+            <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+              <div class="play-icon-glow w-13 h-13 rounded-full bg-white/90 text-charcoal flex items-center justify-center text-lg shadow-xl shadow-black/40 transition-all duration-300 pl-0.5 group-hover:bg-gradient-to-tr group-hover:from-[#833ab4] group-hover:via-[#fd1d1d] group-hover:to-[#fcb045] group-hover:text-white group-hover:scale-110">
+                <i class="fa-solid ${reel.isVideo ? 'fa-play' : 'fa-expand'}"></i>
+              </div>
+            </div>
+
+            <!-- Bottom Info on Reel -->
+            <div class="absolute bottom-3 inset-x-3 space-y-2 text-white z-10">
+              <!-- Audio indicator -->
+              <div class="flex items-center gap-2 text-[10px] text-stone-300">
+                <div class="flex items-end gap-0.5 h-4 text-rose-400">
+                  <span class="w-1 bg-rose-400 rounded-full soundwave-1"></span>
+                  <span class="w-1 bg-rose-400 rounded-full soundwave-2"></span>
+                  <span class="w-1 bg-rose-400 rounded-full soundwave-3"></span>
+                  <span class="w-1 bg-rose-400 rounded-full soundwave-4"></span>
+                </div>
+                <span class="truncate">${reel.audio || 'Original Audio · @neha__makeover3416'}</span>
+              </div>
+
+              <div>
+                <h4 class="font-serif text-sm sm:text-base font-bold text-white leading-tight drop-shadow-sm line-clamp-1">${reel.title}</h4>
+                <p class="text-[11px] text-stone-300 line-clamp-2 mt-0.5 font-sans">${reel.caption}</p>
+              </div>
+
+              <div class="flex items-center justify-between pt-1 border-t border-white/10 text-[10px] text-stone-300">
+                <span class="flex items-center gap-1 font-semibold text-rose-300">
+                  <i class="fa-solid fa-heart text-rose-400"></i> ${displayLikes}
+                </span>
+                <span class="flex items-center gap-1 text-stone-300">
+                  <i class="fa-solid ${reel.isVideo ? 'fa-eye' : 'fa-circle-check'} text-stone-400"></i> ${displayViews}
+                </span>
+              </div>
+            </div>
+          `;
+
+          card.addEventListener('click', () => {
+            openReelModal(index);
+          });
+
+          reelsGrid.appendChild(card);
+        });
+      }
+
+      // Filter tabs event listeners
+      reelTabButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          reelTabButtons.forEach(b => {
+            b.classList.remove('active', 'bg-charcoal', 'text-white');
+            b.classList.add('bg-stone-100', 'text-stone-700');
+          });
+          btn.classList.add('active', 'bg-charcoal', 'text-white');
+          btn.classList.remove('bg-stone-100', 'text-stone-700');
+
+          currentReelFilter = btn.getAttribute('data-reel-filter') || 'all';
+          renderReelsGrid(currentReelFilter);
+        });
+      });
+
+      // 6. Interactive Reel Player Modal with Direct Video & Embed Support
+      const reelModal = document.getElementById('reelPlayerModal');
+      const reelModalVideo = document.getElementById('reelModalVideo');
+      const reelModalIframe = document.getElementById('reelModalIframe');
+      const reelIframeSpinner = document.getElementById('reelIframeSpinner');
+      const reelModalImg = document.getElementById('reelModalImg');
+      const reelModalTitle = document.getElementById('reelModalTitle');
+      const reelModalCaption = document.getElementById('reelModalCaption');
+      const reelModalAudio = document.getElementById('reelModalAudio');
+      const reelModalInstaLink = document.getElementById('reelModalInstaLink');
+      const closeReelModal = document.getElementById('closeReelModal');
+      const prevReelModalBtn = document.getElementById('prevReelModalBtn');
+      const nextReelModalBtn = document.getElementById('nextReelModalBtn');
+
+      function openReelModal(index) {
+        if (!reelModal || !CLIENT_ACCOUNT_POSTS[index]) return;
+        currentActiveReelIndex = index;
+        const reel = CLIENT_ACCOUNT_POSTS[index];
+
+        if (reelModalImg) reelModalImg.src = reel.img;
+        if (reelModalTitle) reelModalTitle.textContent = reel.title;
+        if (reelModalCaption) reelModalCaption.textContent = reel.caption;
+        if (reelModalAudio) reelModalAudio.textContent = reel.audio || 'Original Audio · @neha__makeover3416';
+        if (reelModalInstaLink) reelModalInstaLink.href = reel.url || `https://www.instagram.com/neha__makeover3416/`;
+
+        // Hide spinner initially
+        if (reelIframeSpinner) {
+          reelIframeSpinner.style.display = 'none';
+        }
+
+        // If we have the authentic direct video, play it smoothly
+        if (reel.videoSrc && reelModalVideo) {
+          if (reelModalIframe) {
+            reelModalIframe.classList.add('hidden');
+            reelModalIframe.src = '';
+          }
+          reelModalVideo.src = reel.videoSrc;
+          reelModalVideo.classList.remove('hidden');
+          reelModalVideo.currentTime = 0;
+          reelModalVideo.play().catch(() => {});
+        } else {
+          // Photo post or fallback
+          if (reelModalVideo) {
+            reelModalVideo.pause();
+            reelModalVideo.src = '';
+            reelModalVideo.classList.add('hidden');
+          }
+          if (reelModalIframe && reel.id && reel.id.length > 5 && !reel.id.startsWith('neha_')) {
+            reelModalIframe.src = `https://www.instagram.com/reel/${reel.id}/embed/`;
+            reelModalIframe.classList.remove('hidden');
+          } else if (reelModalIframe) {
+            reelModalIframe.classList.add('hidden');
+            reelModalIframe.src = '';
+          }
+        }
+
+        reelModal.classList.remove('hidden');
+      }
+
+      function closeReelModalHandler() {
+        if (reelModal) {
+          reelModal.classList.add('hidden');
+          if (reelModalVideo) {
+            reelModalVideo.pause();
+            reelModalVideo.src = '';
+            reelModalVideo.classList.add('hidden');
+          }
+          if (reelModalIframe) {
+            reelModalIframe.src = '';
+            reelModalIframe.classList.add('hidden');
+          }
+        }
+      }
+
+      if (closeReelModal) closeReelModal.addEventListener('click', closeReelModalHandler);
+
+      if (reelModal) {
+        reelModal.addEventListener('click', (e) => {
+          if (e.target === reelModal) closeReelModalHandler();
+        });
+      }
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && reelModal && !reelModal.classList.contains('hidden')) {
+          closeReelModalHandler();
+        } else if (reelModal && !reelModal.classList.contains('hidden')) {
+          if (e.key === 'ArrowLeft') navigateReels(-1);
+          if (e.key === 'ArrowRight') navigateReels(1);
+        }
+      });
+
+      function navigateReels(direction) {
+        let newIndex = currentActiveReelIndex + direction;
+        if (newIndex < 0) newIndex = CLIENT_ACCOUNT_POSTS.length - 1;
+        if (newIndex >= CLIENT_ACCOUNT_POSTS.length) newIndex = 0;
+        openReelModal(newIndex);
+      }
+
+      if (prevReelModalBtn) prevReelModalBtn.addEventListener('click', () => navigateReels(-1));
+      if (nextReelModalBtn) nextReelModalBtn.addEventListener('click', () => navigateReels(1));
+
+      // Fetch Instagram feed automatically on load
+      fetchInstagramFeed(false);
+
+      // Background auto-refresh every 3 minutes
+      setInterval(() => {
+        fetchInstagramFeed(false);
+      }, 180000);
+
+      // 7. Book Specific Look From Open Reel via WhatsApp
+      window.bookLookFromReel = function() {
+        const activeReel = CLIENT_ACCOUNT_POSTS[currentActiveReelIndex] || CLIENT_ACCOUNT_POSTS[0];
+        const text = encodeURIComponent(`Hello Neha! I saw your official Instagram showcase "${activeReel.title}" (@neha__makeover3416: ${activeReel.url}) and I would love to book this exact service at Elegance Beauty Salon in Garhwa.`);
+        const url = `https://wa.me/918252403416?text=${text}`;
+        window.open(url, '_blank');
+      };
+
+      // 8. Live "Open Now" Status Indicator based on 10:00 AM - 8:00 PM operating hours
+      function updateLiveStatus() {
+        const now = new Date();
+        const hour = now.getHours(); // 0 to 23
+        const isOpen = hour >= 10 && hour < 20;
+
+        const heroDot = document.getElementById('heroStatusDot');
+        const heroText = document.getElementById('heroStatusText');
+        const footerDot = document.getElementById('footerStatusDot');
+        const footerText = document.getElementById('footerStatusText');
+
+        if (isOpen) {
+          if (heroDot) heroDot.className = 'w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse';
+          if (heroText) heroText.textContent = 'Open Now · Closes at 8:00 PM';
+          if (footerDot) footerDot.className = 'w-2 h-2 rounded-full bg-emerald-400 animate-pulse';
+          if (footerText) footerText.textContent = 'Open Now · Closes at 8:00 PM';
+        } else {
+          if (heroDot) heroDot.className = 'w-2.5 h-2.5 rounded-full bg-amber-500';
+          if (heroText) heroText.textContent = 'Closed Now · Opens at 10:00 AM';
+          if (footerDot) footerDot.className = 'w-2 h-2 rounded-full bg-amber-400';
+          if (footerText) footerText.textContent = 'Closed Now · Opens at 10:00 AM';
+        }
+
+        // Set min date for booking date picker to today
+        const bookingDateInput = document.getElementById('bookingDate');
+        if (bookingDateInput) {
+          const yyyy = now.getFullYear();
+          const mm = String(now.getMonth() + 1).padStart(2, '0');
+          const dd = String(now.getDate()).padStart(2, '0');
+          bookingDateInput.min = `${yyyy}-${mm}-${dd}`;
+          if (!bookingDateInput.value) {
+            bookingDateInput.value = `${yyyy}-${mm}-${dd}`;
+          }
+        }
+
+        // Update copyright year
+        const currentYearSpan = document.getElementById('currentYear');
+        if (currentYearSpan) {
+          currentYearSpan.textContent = now.getFullYear();
+        }
+      }
+
+      updateLiveStatus();
+      setInterval(updateLiveStatus, 60000);
+
+      // 9. Intersection Observer for Fade-in Scroll Animations
+      function initScrollAnimations() {
+        const animatedElements = document.querySelectorAll('.fade-in-scroll');
+        if (!animatedElements.length) return;
+
+        if ('IntersectionObserver' in window) {
+          const scrollObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+              }
+            });
+          }, {
+            root: null,
+            rootMargin: '0px 0px -40px 0px',
+            threshold: 0.12
+          });
+
+          animatedElements.forEach(el => scrollObserver.observe(el));
+        } else {
+          // Graceful fallback if IntersectionObserver is not supported
+          animatedElements.forEach(el => el.classList.add('is-visible'));
+        }
+      }
+
+      initScrollAnimations();
+    </script>
+  </body>
+</html>

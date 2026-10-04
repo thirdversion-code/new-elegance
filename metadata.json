@@ -1,0 +1,6 @@
+{
+  "name": "Elegance Beauty Salon",
+  "description": "Newly opened in 2026 in Garhwa, Jharkhand by Neha Makeover. Luxury salon offering bespoke nail extensions, rejuvenating facials, royal bridal makeup, and mehndi artistry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
